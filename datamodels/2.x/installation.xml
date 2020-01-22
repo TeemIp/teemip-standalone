@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<installation>
+    <steps type="array">
+        <step>
+            <title>Configuration Management options</title>
+            <description><![CDATA[<h2>The options below allow you to configure the type of elements that are to be managed inside TeemIp's CMDB.</h2>]]></description>
+            <banner>/images/modules.png</banner>
+            <options type="array">
+                <choice>
+                    <extension_code>itop-config-mgmt-core</extension_code>
+                    <title>Configuration Management Core</title>
+                    <description>All the base objects that are mandatory in the TeemIp CMDB: Organizations, Locations, Teams, Persons, etc.</description>
+                    <modules type="array">
+                        <module>itop-config-mgmt</module>
+                        <module>itop-attachments</module>
+                        <module>itop-profiles-itil</module>
+                        <module>itop-welcome-itil</module>
+                        <module>itop-tickets</module>
+                        <module>itop-files-information</module>
+                        <module>itop-twig-base</module>
+                        <module>combodo-db-tools</module>
+                        <module>itop-core-update</module>
+                    </modules>
+                    <mandatory>true</mandatory>
+                </choice>
+                <choice>
+                    <extension_code>itop-config-mgmt-datacenter</extension_code>
+                    <title>Data Center Devices</title>
+                    <description>Manage Data Center devices such as Racks, Enclosures, PDUs, etc.</description>
+                    <modules type="array">
+                        <module>itop-datacenter-mgmt</module>
+                    </modules>
+                    <default>true</default>
+                </choice>
+                <choice>
+                    <extension_code>itop-config-mgmt-end-user</extension_code>
+                    <title>End-User Devices</title>
+                    <description>Manage devices related to end-users: PCs, Phones, Tablets, etc.</description>
+                    <modules type="array">
+                        <module>itop-endusers-devices</module>
+                    </modules>
+                    <default>true</default>
+                </choice>
+                <choice>
+                    <extension_code>itop-config-mgmt-storage</extension_code>
+                    <title>Storage Devices</title>
+                    <description>Manage storage devices such as NAS, SAN Switches, Tape Libraries and Tapes, etc.</description>
+                    <modules type="array">
+                        <module>itop-storage-mgmt</module>
+                    </modules>
+                    <default>true</default>
+                </choice>
+                <choice>
+                    <extension_code>itop-config-mgmt-virtualization</extension_code>
+                    <title>Virtualization</title>
+                    <description>Manage Hypervisors, Virtual Machines and Farms.</description>
+                    <modules type="array">
+                        <module>itop-virtualization-mgmt</module>
+                    </modules>
+                    <default>true</default>
+                </choice>
+                <choice>
+                    <extension_code>teemip-network-mgmt</extension_code>
+                    <title>Networking</title>
+                    <description>Adds network specific CIs like DNS domains, WAN links, AS numbers...</description>
+                    <modules type="array">
+                        <module>teemip-network-mgmt</module>
+                    </modules>
+                    <mandatory>true</mandatory>
+                </choice>
+                <choice>
+                    <extension_code>molkobain-datacenter-view</extension_code>
+                    <title>Rack Management</title>
+                    <description>Manage the content of your racks and enclosures.</description>
+                    <modules type="array">
+                        <module>molkobain-console-tooltips</module>
+                        <module>molkobain-datacenter-view</module>
+                        <module>molkobain-handy-framework</module>
+                        <module>molkobain-newsroom-provider</module>
+                    </modules>
+                    <default>false</default>
+                </choice>
+            </options>
+        </step>
+        <step>
+            <title>IP and DNS  Management options</title>
+            <description><![CDATA[<h2>The options below allow you to set the IP and DNS capabilities of TeemIp.</h2>]]></description>
+            <banner>/datamodels/2.x/teemip-ip-mgmt/images/ipaddress.png</banner>
+            <options type="array">
+                <choice>
+                    <extension_code>teemip-ip-mgmt-core</extension_code>
+                    <title>IPv4 and IPv6 Management</title>
+                    <description>By default, TeemIp manages IPv4 and IPv6 spaces.</description>
+                    <modules type="array">
+                        <module>teemip-ip-mgmt</module>
+                        <module>teemip-ipv6-mgmt</module>
+                        <module>teemip-newsroom-provider</module>
+                        <module>teemip-profiles-itil-adaptor</module>
+                        <module>teemip-webservices</module>
+                        <module>teemip-welcome</module>
+                    </modules>
+                    <mandatory>true</mandatory>
+                </choice>
+                <choice>
+                    <extension_code>teemip-ip-discovery</extension_code>
+                    <title>IP Discovery</title>
+                    <description>Discover active IPs on networks. This extension works in conjunction with IP Discovery Collectors installed outside TeemIp.</description>
+                    <modules type="array">
+                        <module>teemip-ip-discovery</module>
+                    </modules>
+                    <default>false</default>
+                </choice>
+                <choice>
+                    <extension_code>teemip-zone-mgmt</extension_code>
+                    <title>DNS Zone Management</title>
+                    <description>Manage DNS views, zones and DNS records in relation with IP addresses.</description>
+                    <modules type="array">
+                        <module>teemip-zone-mgmt</module>
+                    </modules>
+                    <default>false</default>
+                </choice>
+            </options>
+        </step>
+        <step>
+            <title>Request Management options</title>
+            <description><![CDATA[<h2>Decide whether you want to include a Helpdesk in TeemIP.</h2>]]></description>
+            <banner>/datamodels/2.x/teemip-request-mgmt/images/iprequest.png</banner>
+            <alternatives type="array">
+                <choice>
+                    <extension_code>teemip-request-mgmt</extension_code>
+                    <title>Helpdesk</title>
+                    <description>This option will enable the Helpdesk features.</description>
+                    <modules type="array">
+                        <module>teemip-request-mgmt</module>
+                        <module>molkobain-caselogs-toggler</module>
+                        <module>molkobain-fontawesome5-pack</module>
+                        <module>molkobain-handy-framework</module>
+                        <module>molkobain-newsroom-provider</module>
+                    </modules>
+                    <default>false</default>
+                    <sub_options>
+                        <options type="array">
+                            <choice>
+                                <extension_code>teemip-portal</extension_code>
+                                <title>Enhanced Customer Portal</title>
+                                <description>Built-in customer portal designed for hand-held devices</description>
+                                <modules type="array">
+                                    <module>itop-portal-base</module>
+                                    <module>teemip-portal</module>
+                                </modules>
+                                <default>false</default>
+                            </choice>
+                        </options>
+                    </sub_options>
+                </choice>
+                <choice>
+                    <extension_code>teemip-ticket-mgmt-none</extension_code>
+                    <title>No Ticket Management</title>
+                    <description>Don't manage tickets in TeemIp</description>
+                    <modules type="array">
+                    </modules>
+                    <default>true</default>
+                </choice>
+            </alternatives>
+        </step>
+    </steps>
+</installation>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
+  <classes/>
+  <user_rights>
+    <profiles>
+      <profile id="2" _delta="delete"/><!-- Portal user -->
+      <profile id="4" _delta="delete"/><!-- Service Desk Agent -->
+      <profile id="5" _delta="delete"/><!-- Support Agent -->
+      <profile id="6" _delta="delete"/><!-- Problem Manager -->
+      <profile id="7" _delta="delete"/><!-- Change Implementor -->
+      <profile id="8" _delta="delete"/><!-- Change Supervisor -->
+      <profile id="9" _delta="delete"/><!-- Change Approver -->
+      <profile id="10" _delta="delete"/><!-- Service Manager -->
+      <profile id="43" _delta="define">
+        <name>User Manager</name>
+        <description>Has the rights to create and modify users. Must be combined with another profile.</description>
+        <groups>
+          <group id="User">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:bulk write">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <profile id="44" _delta="define">
+        <name>Notification Manager</name>
+        <description>Has the rights to create and modify notification triggers and actions. Must be combined with another profile.</description>
+        <groups>
+          <group id="Notification">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:bulk write">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <profile id="45" _delta="define">
+        <name>Audit Manager</name>
+        <description>Has the rights to create and modify Audit rules. Must be combined with another profile.</description>
+        <groups>
+          <group id="Audit">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:bulk write">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <profile id="46" _delta="define">
+        <name>Query Manager</name>
+        <description>Has the rights to create and modify the Query Phrasebook. Must be combined with another profile.</description>
+        <groups>
+          <group id="Query">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:bulk write">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+      <!-- profile id="47" _delta="define">
+        <name>SynchroData Manager</name>
+        <description>Has the rights to create and modify the Synchro data source</description>
+        <groups>
+          <group id="SynchroData">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+              <action id="action:bulk read">allow</action>
+              <action id="action:bulk write">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile -->
+      <profile id="48" _delta="define">
+        <name>Admin Tools Manager</name>
+        <description>Has the rights to the Administration menu. Must be combined with another profile.</description>
+        <groups>
+          <group id="AdminTools">
+            <actions>
+              <action id="action:write">allow</action>
+              <action id="action:delete">allow</action>
+              <action id="action:read">allow</action>
+            </actions>
+          </group>
+        </groups>
+      </profile>
+    </profiles>
+  </user_rights>
+</itop_design>
