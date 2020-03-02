@@ -83,8 +83,8 @@
             </options>
         </step>
         <step>
-            <title>IP and DNS  Management options</title>
-            <description><![CDATA[<h2>The options below allow you to set the IP and DNS capabilities of TeemIp.</h2>]]></description>
+            <title>IP, DNS and DHCP Management options</title>
+            <description><![CDATA[<h2>The options below allow you to set the IP, DNS and DHCP capabilities of TeemIp.</h2>]]></description>
             <banner>/datamodels/2.x/teemip-ip-mgmt/images/ipaddress.png</banner>
             <options type="array">
                 <choice>
@@ -116,6 +116,15 @@
                     <description>Manage DNS views, zones and DNS records in relation with IP addresses.</description>
                     <modules type="array">
                         <module>teemip-zone-mgmt</module>
+                    </modules>
+                    <default>false</default>
+                </choice>
+                <choice>
+                    <extension_code>teemip-dhcp-mgmt</extension_code>
+                    <title>DHCP Management</title>
+                    <description>Define and register the DHCP options in use within your DHCP infrastructure.</description>
+                    <modules type="array">
+                        <module>teemip-dhcp-mgmt</module>
                     </modules>
                     <default>false</default>
                 </choice>
