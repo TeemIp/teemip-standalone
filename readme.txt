@@ -1,4 +1,4 @@
-TeemIp - version 2.5.1 - 2019-12-10
+TeemIp - version 2.6.0 - 2020-03-xx
 Readme file
 
 1.   ABOUT THIS RELEASE
@@ -8,7 +8,7 @@ Readme file
 
 1. ABOUT THIS RELEASE
    ==================
-Thank you for downloading the 24th packaged release of TeemIp. This is the product version of release 2.5.1.
+Thank you for downloading the 25th packaged release of TeemIp. This is the product version of release 2.6.0.
 
 TeemIp's documentation can be found at: https://wiki.teemip.net.
 iTop's documentation is available as a Wiki at: https://www.itophub.io/wiki/page.
@@ -27,16 +27,16 @@ The whole Combodo team that you can meet at: http://www.combodo.com/who-are-we
 2. INSTALLATION
    ============
 
-For installation instructions, please refer to: https://www.itophub.io/wiki/page?id=2_6_0:install:start
+For installation instructions, please refer to: https://www.itophub.io/wiki/page?id=2_7_0:install:start
 
 
 3. FEATURES
    ========
 
-TeemIp 2.5.1 supports all the new features brought by iTop 2.6.x and has been adapted to it.
-iTop new featured are documented at : https://www.itophub.io/wiki/page?id=2_6_0%3Arelease%3A2_6_whats_new
+TeemIp 2.6.0 supports all the new features brought by iTop 2.7.0 and has been adapted to it.
+iTop new featured are documented at : https://www.itophub.io/wiki/page?id=2_7_0%3Arelease%3A2_7_whats_new
 
-Now, in what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=2_x:whatsnew:start#section251
+Now, in what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=2_x:whatsnew:start#section260
 
 
 Localization
