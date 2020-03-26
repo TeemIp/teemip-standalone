@@ -108,6 +108,8 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'Class:User/Attribute:finalclass+' => '',
 	'Class:User/Attribute:contactid' => 'Contatto (persona)',
 	'Class:User/Attribute:contactid+' => 'Dettagli personali per dati aziendali',
+	'Class:User/Attribute:org_id' => 'Organizzazione',
+	'Class:User/Attribute:org_id+' => 'Organizzazione della persona associata',
 	'Class:User/Attribute:last_name' => 'Cognome',
 	'Class:User/Attribute:last_name+' => 'Cognome del contatto corrispondente',
 	'Class:User/Attribute:first_name' => 'Nome',
@@ -130,7 +132,7 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'Class:User/Attribute:status+' => 'Whether the user account is enabled or disabled.~~',
 	'Class:User/Attribute:status/Value:enabled' => 'Enabled~~',
 	'Class:User/Attribute:status/Value:disabled' => 'Disabled~~',
-		
+
 	'Class:User/Error:LoginMustBeUnique' => 'Il Login deve essere unico - "%1s" già usato',
 	'Class:User/Error:AtLeastOneProfileIsNeeded' => 'Almeno un profilo deve essere assegnato all\'utente.',
 	'Class:User/Error:AtLeastOneOrganizationIsNeeded' => 'At least one organization must be assigned to this user.~~',
@@ -202,7 +204,7 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'Class:URP_UserOrg/Attribute:userid+' => 'Account Utente',
 	'Class:URP_UserOrg/Attribute:userlogin' => 'Login',
 	'Class:URP_UserOrg/Attribute:userlogin+' => 'Login Utente',
-	'Class:URP_UserOrg/Attribute:allowed_org_id' => 'Organizazione',
+	'Class:URP_UserOrg/Attribute:allowed_org_id' => 'Organizzazione',
 	'Class:URP_UserOrg/Attribute:allowed_org_id+' => 'Organizzazione permesse',
 	'Class:URP_UserOrg/Attribute:allowed_org_name' => 'Organizzazione',
 	'Class:URP_UserOrg/Attribute:allowed_org_name+' => 'Organizzazione permesse',
@@ -341,7 +343,7 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'BooleanLabel:yes' => 'si',
 	'BooleanLabel:no' => 'no',
-    'UI:Login:Title' => 'TeemIp login~~',
+	'UI:Login:Title' => 'TeemIp login~~',
 	'Menu:WelcomeMenu' => 'Benveuto', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:WelcomeMenu+' => '', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:WelcomeMenuPage' => 'Benvenuto', // Duplicated into itop-welcome-itil (will be removed from here...)
@@ -389,7 +391,7 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:Button:Insert' => 'Insert~~',
 	'UI:Button:More' => 'More~~',
 	'UI:Button:Less' => 'Less~~',
-	
+
 	'UI:SearchToggle' => 'Cerca',
 	'UI:ClickToCreateNew' => 'Crea un nuovo %1$s~~',
 	'UI:SearchFor_Class' => 'Cerca l\'oggetto %1$s',
@@ -409,7 +411,7 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:Error:CannotWriteToTmp_Dir' => 'Impossibile scrivere il file temporaneo sul disco. upload_tmp_dir = "%1$s".',
 	'UI:Error:UploadStoppedByExtension_FileName' => 'Caricamento fermato per estensione. (Nome del file originale = "%1$s").',
 	'UI:Error:UploadFailedUnknownCause_Code' => 'Il caricamento del file non riuscito, causa sconosciuta. (Codice errore = "%1$s").',
-	
+
 	'UI:Error:1ParametersMissing' => 'Errore: il seguente parametro deve essere specificato per questa operazione: %1$s.',
 	'UI:Error:2ParametersMissing' => 'Errore: i seguenti parametri devono essere specificati per questa operazione: %1$s e %2$s.',
 	'UI:Error:3ParametersMissing' => 'Errore: i seguenti parametri devono essere specificati per questa operazione: %1$s, %2$s e %3$s.',
@@ -427,6 +429,8 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:Error:Invalid_Stimulus_On_Object_In_State' => 'Errore: stimolo non valido "%1$s" su un oggetto %2$s nello stato "%3$s".',
 	'UI:Error:InvalidDashboardFile' => 'Error: invalid dashboard file~~',
 	'UI:Error:InvalidDashboard' => 'Error: invalid dashboard~~',
+	'UI:Error:MaintenanceMode' => 'L\'applicazione è attualmente in manutenzione',
+	'UI:Error:MaintenanceTitle' => 'Maintenance~~',
 
 	'UI:GroupBy:Count' => 'Conteggio',
 	'UI:GroupBy:Count+' => '',
@@ -493,6 +497,7 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:Login:ForgotPwdForm+' => 'TeemIp can send you an email in which you will find instructions to follow to reset your account.~~',
 	'UI:Login:ResetPassword' => 'Send now!~~',
 	'UI:Login:ResetPwdFailed' => 'Failed to send an email: %1$s~~',
+	'UI:Login:SeparatorOr' => 'O',
 
 	'UI:ResetPwd-Error-WrongLogin' => '\'%1$s\' is not a valid login~~',
 	'UI:ResetPwd-Error-NotPossible' => 'external accounts do not allow password reset.~~',
@@ -501,7 +506,7 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:ResetPwd-Error-NoEmailAtt' => 'the account is not associated to a person having an email attribute. Please Contact your administrator.~~',
 	'UI:ResetPwd-Error-NoEmail' => 'missing an email address. Please Contact your administrator.~~',
 	'UI:ResetPwd-Error-Send' => 'email transport technical issue. Please Contact your administrator.~~',
-	'UI:ResetPwd-EmailSent' => 'Please check your email box and follow the instructions...~~',
+	'UI:ResetPwd-EmailSent' => 'Please check your email box and follow the instructions. If you receive no email, please check the login you typed.~~',
 	'UI:ResetPwd-EmailSubject' => 'Reset your TeemIp password~~',
 	'UI:ResetPwd-EmailBody' => '<body><p>You have requested to reset your TeemIp password.</p><p>Please follow this link (single usage) to <a href="%1$s">enter a new password</a></p>.~~',
 
@@ -529,6 +534,9 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:Button:Login' => 'Entra in TeemIp',
 	'UI:Login:Error:AccessRestricted' => 'L\'accesso a TeemIp è limitato. Si prega di contattare un amministratore TeemIp.',
 	'UI:Login:Error:AccessAdmin' => 'Accesso limitato alle persone che hanno privilegi di amministratore. Si prega di contattare un amministratore TeemIp.',
+	'UI:Login:Error:WrongOrganizationName' => 'Organizzazione sconosciuta',
+	'UI:Login:Error:MultipleContactsHaveSameEmail' => 'Più contatti hanno la stessa e-mail',
+	'UI:Login:Error:NoValidProfiles' => 'Nessun profilo valido fornito',
 	'UI:CSVImport:MappingSelectOne' => '-- seleziona uno --',
 	'UI:CSVImport:MappingNotApplicable' => '-- ignora questo campo --',
 	'UI:CSVImport:NoData' => 'Insieme di dati vuoto ..., si prega di fornire alcuni dati!',
@@ -586,7 +594,7 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:CSVImport:AlertIncompleteMapping' => 'Per favore seleziona una mappatura per ogni campo.',
 	'UI:CSVImport:AlertMultipleMapping' => 'Please make sure that a target field is mapped only once.~~',
 	'UI:CSVImport:AlertNoSearchCriteria' => 'Per favore seleziona almeno un criterio di ricerca',
-	'UI:CSVImport:Encoding' => 'Codifica dei caratteri',	
+	'UI:CSVImport:Encoding' => 'Codifica dei caratteri',
 	'UI:UniversalSearchTitle' => 'TeemIp - Ricerca Universale',
 	'UI:UniversalSearch:Error' => 'Errore: %1$s~~',
 	'UI:UniversalSearch:LabelSelectTheClass' => 'Seleziona la classe per la ricerca: ',
@@ -656,6 +664,10 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:RunQuery:MoreInfo' => 'Maggiori informazioni sulla query: ',
 	'UI:RunQuery:DevelopedQuery' => 'Espressione della query riqualificata:',
 	'UI:RunQuery:SerializedFilter' => 'Filtro pubblicato: ',
+	'UI:RunQuery:DevelopedOQL' => 'Developed OQL~~',
+	'UI:RunQuery:DevelopedOQLCount' => 'Developed OQL for count~~',
+	'UI:RunQuery:ResultSQLCount' => 'Resulting SQL for count~~',
+	'UI:RunQuery:ResultSQL' => 'Resulting SQL~~',
 	'UI:RunQuery:Error' => 'Si è verificato un errore durante l\'esecuzione della query: %1$s',
 	'UI:Query:UrlForExcel' => 'URL to use for MS-Excel web queries~~',
 	'UI:Query:UrlV1' => 'The list of fields has been left unspecified. The page <em>export-V2.php</em> cannot be invoked without this information. Therefore, the URL suggested herebelow points to the legacy page: <em>export.php</em>. This legacy version of the export has the following limitation: the list of exported fields may vary depending on the output format and the data model of TeemIp. Should you want to garantee that the list of exported columns will remain stable on the long run, then you must specify a value for the attribute "Fields" and use the page <em>export-V2.php</em>.~~',
@@ -677,7 +689,7 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:Schema:Label' => 'Etichetta',
 	'UI:Schema:Label+' => '',
 	'UI:Schema:Type' => 'Tipo',
-	
+
 	'UI:Schema:Type+' => '',
 	'UI:Schema:Origin' => 'Origine',
 	'UI:Schema:Origin+' => '',
@@ -767,7 +779,7 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:Delete:CannotUpdateBecause_Issue' => 'Dovrebbero essere automaticamente aggiornati, ma: %1$s~~',
 	'UI:Delete:WillAutomaticallyUpdate_Fields' => 'Sarà automaticamente aggiornato (reset: %1$s)~~',
 	'UI:Delete:Count_Objects/LinksReferencing_Object' => '%1$d oggetti/link fanno riferimento %2$s',
-	'UI:Delete:Count_Objects/LinksReferencingTheObjects' => '%1$d oggetti / link fanno riferimento alcuni degli oggetti da eliminare',	
+	'UI:Delete:Count_Objects/LinksReferencingTheObjects' => '%1$d oggetti / link fanno riferimento alcuni degli oggetti da eliminare',
 	'UI:Delete:ReferencesMustBeDeletedToEnsureIntegrity' => 'Per garantire l\'integrità del database, ogni riferimento dovrebbe essere ulteriormente eliminato',
 	'UI:Delete:Consequence+' => '',
 	'UI:Delete:SorryDeletionNotAllowed' => 'Spiacenti, non sei autorizzato a cancellare questo oggetto, vedere le spiegazioni di cui sopra',
@@ -816,7 +828,7 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:FatalErrorMessage' => 'Fatal error, TeemIp non può continuare.',
 	'UI:Error_Details' => 'Errore: %1$s.',
 
-	'UI:PageTitle:ClassProjections'	=> 'TeemIp gestione degli utenti - proiezioni classe',
+	'UI:PageTitle:ClassProjections' => 'TeemIp gestione degli utenti - proiezioni classe',
 	'UI:PageTitle:ProfileProjections' => 'TeemIp gestione degli utenti - proiezioni profilo',
 	'UI:UserManagement:Class' => 'Classe',
 	'UI:UserManagement:Class+' => '',
@@ -855,10 +867,11 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI:UserManagement:GrantMatrix' => 'Grant Matrix',
 	'UI:UserManagement:LinkBetween_User_And_Profile' => 'Collegamento tra %1$s e %2$s',
 	'UI:UserManagement:LinkBetween_User_And_Org' => 'Collegamento tra %1$s e %2$s',
-	
+
 	'Menu:AdminTools' => 'Strumenti di amministrazione', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:AdminTools+' => '', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:AdminTools?' => 'Strumenti accessibile solo agli utenti con il profilo di amministratore', // Duplicated into itop-welcome-itil (will be removed from here...)
+	'Menu:SystemTools' => 'Sistema',
 
 	'UI:ChangeManagementMenu' => 'Gestione Cambi',
 	'UI:ChangeManagementMenu+' => '',
@@ -874,28 +887,28 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 	'UI-ConfigurationManagementMenu-InfraByType' => 'Oggetti infrastruttutura per tipo',
 	'UI-ConfigurationManagementMenu-InfraByStatus' => 'Oggetti infrastruttutura per stato',
 
-'UI:ConfigMgmtMenuOverview:Title' => 'Cruscotto per Gestione configurazione',
-'UI-ConfigMgmtMenuOverview-FunctionalCIbyStatus' => 'Configuration Items per stato',
-'UI-ConfigMgmtMenuOverview-FunctionalCIByType' => 'Configuration Items per tipo',
+	'UI:ConfigMgmtMenuOverview:Title' => 'Cruscotto per Gestione configurazione',
+	'UI-ConfigMgmtMenuOverview-FunctionalCIbyStatus' => 'Configuration Items per stato',
+	'UI-ConfigMgmtMenuOverview-FunctionalCIByType' => 'Configuration Items per tipo',
 
-'UI:RequestMgmtMenuOverview:Title' => 'Cruscotto per Gestione Richieste',
-'UI-RequestManagementOverview-RequestByService' => 'Richieste degli utenti per servizio',
-'UI-RequestManagementOverview-RequestByPriority' => 'Richieste degli utenti per priorità',
-'UI-RequestManagementOverview-RequestUnassigned' => 'Richieste degli utenti non ancora assegnate ad un agente',
+	'UI:RequestMgmtMenuOverview:Title' => 'Cruscotto per Gestione Richieste',
+	'UI-RequestManagementOverview-RequestByService' => 'Richieste degli utenti per servizio',
+	'UI-RequestManagementOverview-RequestByPriority' => 'Richieste degli utenti per priorità',
+	'UI-RequestManagementOverview-RequestUnassigned' => 'Richieste degli utenti non ancora assegnate ad un agente',
 
-'UI:IncidentMgmtMenuOverview:Title' => 'Cruscotto Gestione degli Incidenti',
-'UI-IncidentManagementOverview-IncidentByService' => 'Incidenti per servizio',
-'UI-IncidentManagementOverview-IncidentByPriority' => 'Incidenti per  priorità',
-'UI-IncidentManagementOverview-IncidentUnassigned' => 'Incidenti non ancora assegnati ad un agente',
+	'UI:IncidentMgmtMenuOverview:Title' => 'Cruscotto Gestione degli Incidenti',
+	'UI-IncidentManagementOverview-IncidentByService' => 'Incidenti per servizio',
+	'UI-IncidentManagementOverview-IncidentByPriority' => 'Incidenti per  priorità',
+	'UI-IncidentManagementOverview-IncidentUnassigned' => 'Incidenti non ancora assegnati ad un agente',
 
-'UI:ChangeMgmtMenuOverview:Title' => 'Cruscotto per Gestione dei Cambi',
-'UI-ChangeManagementOverview-ChangeByType' => 'Cambi per tipo',
-'UI-ChangeManagementOverview-ChangeUnassigned' => 'Cambi non ancora assegnati ad un agente',
-'UI-ChangeManagementOverview-ChangeWithOutage' => 'Interruzioni dovute ai cambi',
+	'UI:ChangeMgmtMenuOverview:Title' => 'Cruscotto per Gestione dei Cambi',
+	'UI-ChangeManagementOverview-ChangeByType' => 'Cambi per tipo',
+	'UI-ChangeManagementOverview-ChangeUnassigned' => 'Cambi non ancora assegnati ad un agente',
+	'UI-ChangeManagementOverview-ChangeWithOutage' => 'Interruzioni dovute ai cambi',
 
-'UI:ServiceMgmtMenuOverview:Title' => 'Cruscotto per Gestione dei Cambi',
-'UI-ServiceManagementOverview-CustomerContractToRenew' => 'Contratti con i clienti da rinnovarsi in 30 giorni',
-'UI-ServiceManagementOverview-ProviderContractToRenew' => 'Contratti con i fornitori da rinnovarsi in 30 giorni',
+	'UI:ServiceMgmtMenuOverview:Title' => 'Cruscotto per Gestione dei Cambi',
+	'UI-ServiceManagementOverview-CustomerContractToRenew' => 'Contratti con i clienti da rinnovarsi in 30 giorni',
+	'UI-ServiceManagementOverview-ProviderContractToRenew' => 'Contratti con i fornitori da rinnovarsi in 30 giorni',
 
 	'UI:ContactsMenu' => 'Contatti',
 	'UI:ContactsMenu+' => '',
@@ -906,13 +919,13 @@ Dict::Add('IT IT', 'Italian', 'Italiano', array(
 
 	'Menu:CSVImportMenu' => 'Importazione CSV', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:CSVImportMenu+' => '', // Duplicated into itop-welcome-itil (will be removed from here...)
-	
+
 	'Menu:DataModelMenu' => 'Modello Dati', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:DataModelMenu+' => '', // Duplicated into itop-welcome-itil (will be removed from here...)
-	
+
 	'Menu:ExportMenu' => 'Esporta', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:ExportMenu+' => '', // Duplicated into itop-welcome-itil (will be removed from here...)
-	
+
 	'Menu:NotificationsMenu' => 'Notifiche', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:NotificationsMenu+' => '', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'UI:NotificationsMenu:Title' => 'Configurazione delle <span class="hilite">Notifiche</span>',
@@ -950,19 +963,19 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	'Menu:AuditCategories' => 'Categorie di Audit', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:AuditCategories+' => '', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:Notifications:Title' => 'Categorie di Audit', // Duplicated into itop-welcome-itil (will be removed from here...)
-	
+
 	'Menu:RunQueriesMenu' => 'Esegui query', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:RunQueriesMenu+' => '', // Duplicated into itop-welcome-itil (will be removed from here...)
-	
+
 	'Menu:QueryMenu' => 'Query phrasebook~~', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:QueryMenu+' => 'Query phrasebook~~', // Duplicated into itop-welcome-itil (will be removed from here...)
-	
+
 	'Menu:DataAdministration' => 'Dati di amministrazione', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:DataAdministration+' => '', // Duplicated into itop-welcome-itil (will be removed from here...)
-	
+
 	'Menu:UniversalSearchMenu' => 'Ricerca universale', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:UniversalSearchMenu+' => '', // Duplicated into itop-welcome-itil (will be removed from here...)
-	
+
 	'Menu:UserManagementMenu' => 'Gestione degli utenti', // Duplicated into itop-welcome-itil (will be removed from here...)
 	'Menu:UserManagementMenu+' => '', // Duplicated into itop-welcome-itil (will be removed from here...)
 
@@ -984,9 +997,9 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	'UI:Download-CSV' => 'Download %1$s~~',
 
 	'UI:DeadlineMissedBy_duration' => 'Mancati %1$s',
-	'UI:Deadline_LessThan1Min' => '< 1 min',		
-	'UI:Deadline_Minutes' => '%1$d min',			
-	'UI:Deadline_Hours_Minutes' => '%1$dh %2$dmin',			
+	'UI:Deadline_LessThan1Min' => '< 1 min',
+	'UI:Deadline_Minutes' => '%1$d min',
+	'UI:Deadline_Hours_Minutes' => '%1$dh %2$dmin',
 	'UI:Deadline_Days_Hours_Minutes' => '%1$dg %2$dh %3$dmin',
 	'UI:Help' => 'Aiuto',
 	'UI:PasswordConfirm' => '(Conferma)',
@@ -1038,8 +1051,8 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	'Portal:ChangeMyPassword' => 'Cambia la mia password',
 	'Portal:Disconnect' => 'Disconnetti',
 	'Portal:OpenRequests' => 'Le mie richieste aperte',
-	'Portal:ClosedRequests'  => 'My closed requests',
-	'Portal:ResolvedRequests'  => 'Le mie richieste risolte',
+	'Portal:ClosedRequests' => 'My closed requests',
+	'Portal:ResolvedRequests' => 'Le mie richieste risolte',
 	'Portal:SelectService' => 'Seleziona un servizio dal catalogo:',
 	'Portal:PleaseSelectOneService' => 'Si prega di selezionare un servizio',
 	'Portal:SelectSubcategoryFrom_Service' => 'Seleziona una sotto-categoria per il servizio %1$s:',
@@ -1058,7 +1071,7 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	'Portal:RemoveAttachment' => ' Rimuovi allegati ',
 	'Portal:Attachment_No_To_Ticket_Name' => 'Allegato #%1$d a %2$s (%3$s)',
 	'Portal:SelectRequestTemplate' => 'Select a template for %1$s~~',
-	'Enum:Undefined' => 'Non definito',	
+	'Enum:Undefined' => 'Non definito',
 	'UI:DurationForm_Days_Hours_Minutes_Seconds' => '%1$s Giorni %2$s Ore %3$s Minuti %4$s Secondi',
 	'UI:ModifyAllPageTitle' => 'Modifica Tutto',
 	'UI:Modify_N_ObjectsOf_Class' => 'Modifica %1$d oggetto della classe %2$s',
@@ -1070,7 +1083,7 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	'UI:BulkModifyStatus' => 'Operazioni',
 	'UI:BulkModifyStatus+' => '',
 	'UI:BulkModifyErrors' => 'Errori (eventuali)',
-	'UI:BulkModifyErrors+' => '',	
+	'UI:BulkModifyErrors+' => '',
 	'UI:BulkModifyStatusOk' => 'Ok',
 	'UI:BulkModifyStatusError' => 'Errore',
 	'UI:BulkModifyStatusModified' => 'Modificato',
@@ -1109,7 +1122,7 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	'UI:Favorites:ShowObsoleteData+' => 'Show obsolete data in search results and lists of items to select~~',
 	'UI:NavigateAwayConfirmationMessage' => 'Any modification will be discarded.~~',
 	'UI:CancelConfirmationMessage' => 'You will loose your changes. Continue anyway?~~',
-	'UI:AutoApplyConfirmationMessage' => 'Some changes have not been applied yet. Do you want TeemIp to take them into account?~~',
+	'UI:AutoApplyConfirmationMessage' => 'Some changes have not been applied yet. Do you want itop to take them into account?~~',
 	'UI:Create_Class_InState' => 'Create the %1$s in state: ~~',
 	'UI:OrderByHint_Values' => 'Sort order: %1$s~~',
 	'UI:Menu:AddToDashboard' => 'Add To Dashboard...~~',
@@ -1164,8 +1177,8 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 
 	'UI:DashboardEdit:Layout' => 'Layout~~',
 	'UI:DashboardEdit:Properties' => 'Dashboard Properties~~',
-	'UI:DashboardEdit:Dashlets' => 'Available Dashlets~~',	
-	'UI:DashboardEdit:DashletProperties' => 'Dashlet Properties~~',	
+	'UI:DashboardEdit:Dashlets' => 'Available Dashlets~~',
+	'UI:DashboardEdit:DashletProperties' => 'Dashlet Properties~~',
 
 	'UI:Form:Property' => 'Property~~',
 	'UI:Form:Value' => 'Value~~',
@@ -1276,7 +1289,7 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	'Month-10' => 'October~~',
 	'Month-11' => 'November~~',
 	'Month-12' => 'December~~',
-	
+
 	// Short version for the DatePicker
 	'DayOfWeek-Sunday-Min' => 'Su~~',
 	'DayOfWeek-Monday-Min' => 'Mo~~',
@@ -1298,7 +1311,7 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	'Month-11-Short' => 'Nov~~',
 	'Month-12-Short' => 'Dec~~',
 	'Calendar-FirstDayOfWeek' => '0~~', // 0 = Sunday, 1 = Monday, etc...
-	
+
 	'UI:Menu:ShortcutList' => 'Create a Shortcut...~~',
 	'UI:ShortcutRenameDlg:Title' => 'Rename the shortcut~~',
 	'UI:ShortcutListDlg:Title' => 'Create a shortcut for the list~~',
@@ -1348,7 +1361,7 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 <tr><td>i</td><td>minutes (2 digits, e.g. 00..59)</td></tr>
 <tr><td>s</td><td>seconds (2 digits, e.g. 00..59)</td></tr>
 </table>~~',
-		
+
 	'UI:Button:Remove' => 'Remove~~',
 	'UI:AddAnExisting_Class' => 'Add objects of type %1$s...~~',
 	'UI:SelectionOf_Class' => 'Selection of objects of type %1$s~~',
@@ -1361,13 +1374,13 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	'UI:About:InstallationOptions' => 'Installation options~~',
 	'UI:About:ManualExtensionSource' => 'Extension~~',
 	'UI:About:Extension_Version' => 'Version: %1$s~~',
-	'UI:About:RemoteExtensionSource' => 'Data~~',	
-	
+	'UI:About:RemoteExtensionSource' => 'Data~~',
+
 	'UI:DisconnectedDlgMessage' => 'You are disconnected. You must identify yourself to continue using the application.~~',
 	'UI:DisconnectedDlgTitle' => 'Warning!~~',
 	'UI:LoginAgain' => 'Login again~~',
 	'UI:StayOnThePage' => 'Stay on this page~~',
-	
+
 	'ExcelExporter:ExportMenu' => 'Excel Export...~~',
 	'ExcelExporter:ExportDialogTitle' => 'Excel Export~~',
 	'ExcelExporter:ExportButton' => 'Export~~',
@@ -1387,16 +1400,16 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	'UI:CurrentObjectLockExpired_Explanation' => 'The lock to prevent concurrent modifications of the object has expired. You can no longer submit your modification since other users are now allowed to modify this object.~~',
 	'UI:ConcurrentLockKilled' => 'The lock preventing modifications on the current object has been deleted.~~',
 	'UI:Menu:KillConcurrentLock' => 'Kill the Concurrent Modification Lock !~~',
-	
+
 	'UI:Menu:ExportPDF' => 'Export as PDF...~~',
 	'UI:Menu:PrintableVersion' => 'Printer friendly version~~',
-	
+
 	'UI:BrowseInlineImages' => 'Browse images...~~',
 	'UI:UploadInlineImageLegend' => 'Upload a new image~~',
 	'UI:SelectInlineImageToUpload' => 'Select the image to upload~~',
 	'UI:AvailableInlineImagesLegend' => 'Available images~~',
 	'UI:NoInlineImage' => 'There is no image available on the server. Use the "Browse" button above to select an image from your computer and upload it to the server.~~',
-	
+
 	'UI:ToggleFullScreen' => 'Toggle Maximize / Minimize~~',
 	'UI:Button:ResetImage' => 'Recover the previous image~~',
 	'UI:Button:RemoveImage' => 'Remove the image~~',
@@ -1405,6 +1418,7 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	// Search form
 	'UI:Search:Toggle' => 'Minimize / Expand~~',
 	'UI:Search:AutoSubmit:DisabledHint' => 'Auto submit has been disabled for this class~~',
+	'UI:Search:Obsolescence:DisabledHint' => '<span class="fas fa-eye-slash fa-1x"></span> Based on your preferences, obsolete data are hidden~~',
 	'UI:Search:NoAutoSubmit:ExplainText' => 'Add some criterion on the search box or click the search button to view the objects.~~',
 	'UI:Search:Criterion:MoreMenu:AddCriteria' => 'Add new criteria~~',
 	// - Add new criteria button
@@ -1446,20 +1460,20 @@ Quando è associata a un trigger, ad ogni azione è assegnato un numero "ordine"
 	'UI:Search:Criteria:Title:Enum:In:All' => '%1$s: Any~~',
 	//   - TagSet widget
 	'UI:Search:Criteria:Title:TagSet:Matches' => '%1$s: %2$s~~',
-    //   - External key widget
-    'UI:Search:Criteria:Title:ExternalKey:Empty' => '%1$s is defined~~',
-    'UI:Search:Criteria:Title:ExternalKey:NotEmpty' => '%1$s is not defined~~',
-    'UI:Search:Criteria:Title:ExternalKey:Equals' => '%1$s %2$s~~',
-    'UI:Search:Criteria:Title:ExternalKey:In' => '%1$s: %2$s~~',
-    'UI:Search:Criteria:Title:ExternalKey:In:Many' => '%1$s: %2$s and %3$s others~~',
-    'UI:Search:Criteria:Title:ExternalKey:In:All' => '%1$s: Any~~',
-    //   - Hierarchical key widget
-    'UI:Search:Criteria:Title:HierarchicalKey:Empty' => '%1$s is defined~~',
-    'UI:Search:Criteria:Title:HierarchicalKey:NotEmpty' => '%1$s is not defined~~',
-    'UI:Search:Criteria:Title:HierarchicalKey:Equals' => '%1$s %2$s~~',
-    'UI:Search:Criteria:Title:HierarchicalKey:In' => '%1$s: %2$s~~',
-    'UI:Search:Criteria:Title:HierarchicalKey:In:Many' => '%1$s: %2$s and %3$s others~~',
-    'UI:Search:Criteria:Title:HierarchicalKey:In:All' => '%1$s: Any~~',
+	//   - External key widget
+	'UI:Search:Criteria:Title:ExternalKey:Empty' => '%1$s is defined~~',
+	'UI:Search:Criteria:Title:ExternalKey:NotEmpty' => '%1$s is not defined~~',
+	'UI:Search:Criteria:Title:ExternalKey:Equals' => '%1$s %2$s~~',
+	'UI:Search:Criteria:Title:ExternalKey:In' => '%1$s: %2$s~~',
+	'UI:Search:Criteria:Title:ExternalKey:In:Many' => '%1$s: %2$s and %3$s others~~',
+	'UI:Search:Criteria:Title:ExternalKey:In:All' => '%1$s: Any~~',
+	//   - Hierarchical key widget
+	'UI:Search:Criteria:Title:HierarchicalKey:Empty' => '%1$s is defined~~',
+	'UI:Search:Criteria:Title:HierarchicalKey:NotEmpty' => '%1$s is not defined~~',
+	'UI:Search:Criteria:Title:HierarchicalKey:Equals' => '%1$s %2$s~~',
+	'UI:Search:Criteria:Title:HierarchicalKey:In' => '%1$s: %2$s~~',
+	'UI:Search:Criteria:Title:HierarchicalKey:In:Many' => '%1$s: %2$s and %3$s others~~',
+	'UI:Search:Criteria:Title:HierarchicalKey:In:All' => '%1$s: Any~~',
 
 	// - Criteria operators
 	//   - Default widget
