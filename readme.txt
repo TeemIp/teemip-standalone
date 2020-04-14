@@ -1,4 +1,4 @@
-TeemIp - version 2.6.0 - 2020-03-xx
+TeemIp - version 2.6.0 - 2020-04-14
 Readme file
 
 1.   ABOUT THIS RELEASE
@@ -14,7 +14,7 @@ TeemIp's documentation can be found at: https://wiki.teemip.net.
 iTop's documentation is available as a Wiki at: https://www.itophub.io/wiki/page.
 
 TeemIp is released under the AGPL (v3) license. (Check license.txt in this directory).
-The source code of TeemIp can be found on SourceForge: https://sourceforge.net/projects/teemip/
+The source code of TeemIp can be found on GitHub: https://github.com/TeemIp
 
 Special Thanks To:
 ------------------
@@ -36,7 +36,7 @@ For installation instructions, please refer to: https://www.itophub.io/wiki/page
 TeemIp 2.6.0 supports all the new features brought by iTop 2.7.0 and has been adapted to it.
 iTop new featured are documented at : https://www.itophub.io/wiki/page?id=2_7_0%3Arelease%3A2_7_whats_new
 
-Now, in what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=2_x:whatsnew:start#section260
+In what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=2_x:whatsnew:start#section260
 
 
 Localization
