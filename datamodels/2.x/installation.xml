@@ -68,18 +68,6 @@
                     </modules>
                     <mandatory>true</mandatory>
                 </choice>
-                <choice>
-                    <extension_code>molkobain-datacenter-view</extension_code>
-                    <title>Rack Management</title>
-                    <description>Manage the content of your racks and enclosures.</description>
-                    <modules type="array">
-                        <module>molkobain-console-tooltips</module>
-                        <module>molkobain-datacenter-view</module>
-                        <module>molkobain-handy-framework</module>
-                        <module>molkobain-newsroom-provider</module>
-                    </modules>
-                    <default>false</default>
-                </choice>
             </options>
         </step>
         <step>
@@ -141,10 +129,6 @@
                     <description>This option will enable the Helpdesk features.</description>
                     <modules type="array">
                         <module>teemip-request-mgmt</module>
-                        <module>molkobain-caselogs-toggler</module>
-                        <module>molkobain-fontawesome5-pack</module>
-                        <module>molkobain-handy-framework</module>
-                        <module>molkobain-newsroom-provider</module>
                     </modules>
                     <default>false</default>
                     <sub_options>
