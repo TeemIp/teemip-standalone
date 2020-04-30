@@ -23,7 +23,7 @@
 
 SetupWebPage::AddModule(
 	__FILE__,
-	'teemip-profiles-itil-adaptor/2.6.0',
+	'teemip-profiles-itil-adaptor/2.6.1',
 	array(
 		// Identification
 		//
@@ -34,7 +34,7 @@ SetupWebPage::AddModule(
 		//
 		'dependencies' => array(
 			'itop-profiles-itil/2.7.0',
-			'teemip-ip-mgmt/2.6.0',
+			'teemip-ip-mgmt/2.6.1',
 		),
 		'mandatory' => true,
 		'visible' => false,
