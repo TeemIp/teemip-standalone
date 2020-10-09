@@ -94,6 +94,7 @@
                     <modules type="array">
                         <module>teemip-ip-mgmt</module>
                         <module>teemip-ipv6-mgmt</module>
+                        <module>teemip-macaddress-lookup</module>
                         <module>teemip-newsroom-provider</module>
                         <module>teemip-profiles-itil-adaptor</module>
                         <module>teemip-webservices</module>
