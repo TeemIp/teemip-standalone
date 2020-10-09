@@ -19,8 +19,10 @@
                         <module>itop-profiles-itil</module>
                         <module>itop-tickets</module>
                         <module>itop-welcome-itil</module>
-                        <module>molkobain-caselogs-toggler</module>
                         <module>molkobain-console-tooltips</module>
+                        <module>molkobain-fontawesome5-pack</module>
+                        <module>molkobain-handy-framework</module>
+                        <module>molkobain-newsroom-provider</module>
                     </modules>
                     <mandatory>true</mandatory>
                 </choice>
@@ -72,11 +74,11 @@
                 <choice>
                     <extension_code>molkobain-datacenter-view</extension_code>
                     <title>Rack management</title>
-                    <description>Graphycally manage and visualize your racks and enclosures</description>
+                    <description>Graphically manage and visualize your racks and enclosures</description>
                     <modules type="array">
                         <module>molkobain-datacenter-view</module>
                     </modules>
-                    <mandatory>true</mandatory>
+                    <default>true</default>
                 </choice>
             </options>
         </step>
@@ -139,6 +141,7 @@
                     <description>This option will enable the Helpdesk features.</description>
                     <modules type="array">
                         <module>teemip-request-mgmt</module>
+                        <module>molkobain-caselogs-toggler</module>
                     </modules>
                     <default>false</default>
                     <sub_options>
