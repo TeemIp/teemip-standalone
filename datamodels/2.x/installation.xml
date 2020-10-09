@@ -11,14 +11,16 @@
                     <title>Configuration Management Core</title>
                     <description>All the base objects that are mandatory in the TeemIp CMDB: Organizations, Locations, Teams, Persons, etc.</description>
                     <modules type="array">
-                        <module>itop-config-mgmt</module>
-                        <module>itop-attachments</module>
-                        <module>itop-profiles-itil</module>
-                        <module>itop-welcome-itil</module>
-                        <module>itop-tickets</module>
-                        <module>itop-files-information</module>
                         <module>combodo-db-tools</module>
+                        <module>itop-attachments</module>
+                        <module>itop-config-mgmt</module>
                         <module>itop-core-update</module>
+                        <module>itop-files-information</module>
+                        <module>itop-profiles-itil</module>
+                        <module>itop-tickets</module>
+                        <module>itop-welcome-itil</module>
+                        <module>molkobain-caselogs-toggler</module>
+                        <module>molkobain-console-tooltips</module>
                     </modules>
                     <mandatory>true</mandatory>
                 </choice>
@@ -64,6 +66,15 @@
                     <description>Adds network specific CIs like DNS domains, WAN links, AS numbers...</description>
                     <modules type="array">
                         <module>teemip-network-mgmt</module>
+                    </modules>
+                    <mandatory>true</mandatory>
+                </choice>
+                <choice>
+                    <extension_code>molkobain-datacenter-view</extension_code>
+                    <title>Rack management</title>
+                    <description>Graphycally manage and visualize your racks and enclosures</description>
+                    <modules type="array">
+                        <module>molkobain-datacenter-view</module>
                     </modules>
                     <mandatory>true</mandatory>
                 </choice>
