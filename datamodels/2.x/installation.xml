@@ -13,9 +13,12 @@
                     <modules type="array">
                         <module>combodo-db-tools</module>
                         <module>itop-attachments</module>
+                        <module>itop-backup</module>
+                        <module>itop-config</module>
                         <module>itop-config-mgmt</module>
                         <module>itop-core-update</module>
                         <module>itop-files-information</module>
+                        <module>itop-log-mgmt</module>
                         <module>itop-profiles-itil</module>
                         <module>itop-tickets</module>
                         <module>itop-welcome-itil</module>
@@ -28,10 +31,11 @@
                 </choice>
                 <choice>
                     <extension_code>itop-config-mgmt-datacenter</extension_code>
-                    <title>Data Center Devices</title>
-                    <description>Manage Data Center devices such as Racks, Enclosures, PDUs, etc.</description>
+                    <title>Data Center and Storage Devices</title>
+                    <description>Manage Data Center and Storage devices such as Racks, Enclosures, PDUs, NAS, SAN Switches, Tape Libraries, etc...</description>
                     <modules type="array">
                         <module>itop-datacenter-mgmt</module>
+                        <module>itop-storage-mgmt</module>
                     </modules>
                     <default>true</default>
                 </choice>
@@ -41,15 +45,6 @@
                     <description>Manage devices related to end-users: PCs, Phones, Tablets, etc.</description>
                     <modules type="array">
                         <module>itop-endusers-devices</module>
-                    </modules>
-                    <default>true</default>
-                </choice>
-                <choice>
-                    <extension_code>itop-config-mgmt-storage</extension_code>
-                    <title>Storage Devices</title>
-                    <description>Manage storage devices such as NAS, SAN Switches, Tape Libraries and Tapes, etc.</description>
-                    <modules type="array">
-                        <module>itop-storage-mgmt</module>
                     </modules>
                     <default>true</default>
                 </choice>
@@ -65,16 +60,17 @@
                 <choice>
                     <extension_code>teemip-network-mgmt</extension_code>
                     <title>Networking</title>
-                    <description>Adds network specific CIs like DNS domains, WAN links, AS numbers...</description>
+                    <description>Adds network specific CIs like DNS domains, WAN links, AS numbers, Aggregate links, etc...</description>
                     <modules type="array">
                         <module>teemip-network-mgmt</module>
+                        <module>teemip-network-mgmt-extended</module>
                     </modules>
                     <mandatory>true</mandatory>
                 </choice>
                 <choice>
                     <extension_code>molkobain-datacenter-view</extension_code>
                     <title>Rack management</title>
-                    <description>Graphically manage and visualize your racks and enclosures</description>
+                    <description>Graphically manage and visualize your racks and enclosures.</description>
                     <modules type="array">
                         <module>molkobain-datacenter-view</module>
                     </modules>
