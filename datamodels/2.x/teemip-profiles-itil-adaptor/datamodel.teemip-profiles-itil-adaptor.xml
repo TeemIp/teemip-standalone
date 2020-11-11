@@ -25,7 +25,7 @@
             </actions>
           </group>
         </groups>
-      </profile>
+      </profile><!-- User Manager -->
       <profile id="44" _delta="define">
         <name>Notification Manager</name>
         <description>Has the rights to create and modify notification triggers and actions. Must be combined with another profile.</description>
@@ -40,7 +40,7 @@
             </actions>
           </group>
         </groups>
-      </profile>
+      </profile><!-- Notification Manager -->
       <profile id="45" _delta="define">
         <name>Audit Manager</name>
         <description>Has the rights to create and modify Audit rules. Must be combined with another profile.</description>
@@ -55,7 +55,7 @@
             </actions>
           </group>
         </groups>
-      </profile>
+      </profile><!-- Audit Manager -->
       <profile id="46" _delta="define">
         <name>Query Manager</name>
         <description>Has the rights to create and modify the Query Phrasebook. Must be combined with another profile.</description>
@@ -70,7 +70,7 @@
             </actions>
           </group>
         </groups>
-      </profile>
+      </profile><!-- Query Manager -->
       <!-- profile id="47" _delta="define">
         <name>SynchroData Manager</name>
         <description>Has the rights to create and modify the Synchro data source</description>

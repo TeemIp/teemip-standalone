@@ -69,7 +69,7 @@
                 </choice>
                 <choice>
                     <extension_code>molkobain-datacenter-view</extension_code>
-                    <title>Rack management</title>
+                    <title>Rack management from Molkobain</title>
                     <description>Graphically manage and visualize your racks and enclosures.</description>
                     <modules type="array">
                         <module>molkobain-datacenter-view</module>

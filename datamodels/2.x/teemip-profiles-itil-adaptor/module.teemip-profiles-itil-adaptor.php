@@ -23,7 +23,7 @@
 
 SetupWebPage::AddModule(
 	__FILE__,
-	'teemip-profiles-itil-adaptor/2.6.1',
+	'teemip-profiles-itil-adaptor/2.7.0',
 	array(
 		// Identification
 		//

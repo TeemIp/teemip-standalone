@@ -1,22 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.0">
   <dictionaries>
+    <dictionary id="DE DE" _delta="must_exist">
+      <entries>
+        <entry id="Menu:WelcomeMenu+" _delta="redefine"><![CDATA[Willkommen bei TeemIp]]></entry>
+        <entry id="Menu:WelcomeMenuPage+" _delta="redefine"><![CDATA[Willkommen bei TeemIp]]></entry>
+        <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
+      </entries>
+    </dictionary>
     <dictionary id="EN US" _delta="must_exist">
       <entries>
         <entry id="Menu:WelcomeMenu+" _delta="redefine"><![CDATA[Welcome to TeemIp]]></entry>
         <entry id="Menu:WelcomeMenuPage+" _delta="redefine"><![CDATA[Welcome to TeemIp]]></entry>
+        <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
+      </entries>
+    </dictionary>
+    <dictionary id="ES CR" _delta="must_exist">
+      <entries>
+        <entry id="Menu:WelcomeMenu+" _delta="redefine"><![CDATA[Bienvenido a TeemIp]]></entry>
+        <entry id="Menu:WelcomeMenuPage+" _delta="redefine"><![CDATA[Bienvenido a TeemIp]]></entry>
+        <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
       </entries>
     </dictionary>
     <dictionary id="FR FR" _delta="must_exist">
       <entries>
         <entry id="Menu:WelcomeMenu+" _delta="redefine"><![CDATA[Bienvenue dans TeemIp]]></entry>
         <entry id="Menu:WelcomeMenuPage+" _delta="redefine"><![CDATA[Bienvenue dans TeemIp]]></entry>
+        <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
       </entries>
     </dictionary>
-    <dictionary id="DE DE" _delta="must_exist">
+    <dictionary id="IT IT" _delta="must_exist">
       <entries>
-        <entry id="Menu:WelcomeMenu+" _delta="redefine"><![CDATA[Willkommen bei TeemIp]]></entry>
-        <entry id="Menu:WelcomeMenuPage+" _delta="redefine"><![CDATA[Willkommen bei TeemIp]]></entry>
+        <entry id="Menu:WelcomeMenu+" _delta="redefine"><![CDATA[Benvenuto in TeemIp]]></entry>
+        <entry id="Menu:WelcomeMenuPage+" _delta="redefine"><![CDATA[Benvenuto in TeemIp]]></entry>
+        <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
       </entries>
     </dictionary>
   </dictionaries>
