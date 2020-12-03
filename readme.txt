@@ -1,4 +1,4 @@
-TeemIp - version 2.7.0 - 2020-xx-xx
+TeemIp - version 2.7.0 - 2020-12-xx
 Readme file
 
 1.   ABOUT THIS RELEASE
@@ -34,7 +34,7 @@ For installation instructions, please refer to: https://www.itophub.io/wiki/page
 3. FEATURES
    ========
 
-TeemIp 2.7.0 supports all the new features brought by iTop 2.7.2 and has been adapted to it.
+TeemIp 2.7.0 supports all the new features brought by iTop 2.7.3 and has been adapted to it.
 iTop new featured are documented at : https://www.itophub.io/wiki/page?id=2_7_0%3Arelease%3A2_7_whats_new
 
 In what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=2_x:whatsnew:start#section270

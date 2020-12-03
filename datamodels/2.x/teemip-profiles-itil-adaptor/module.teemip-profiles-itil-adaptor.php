@@ -34,7 +34,7 @@ SetupWebPage::AddModule(
 		//
 		'dependencies' => array(
 			'itop-profiles-itil/2.7.0',
-			'teemip-ip-mgmt/2.6.1',
+			'teemip-ip-mgmt/2.7.0',
 		),
 		'mandatory' => true,
 		'visible' => false,
