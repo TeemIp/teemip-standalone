@@ -1,4 +1,4 @@
-TeemIp - version 2.7.0 - 2020-12-xx
+TeemIp - version 2.7.0 - 2020-12-20
 Readme file
 
 1.   ABOUT THIS RELEASE
