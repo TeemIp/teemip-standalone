@@ -18,7 +18,6 @@
                         <module>itop-config-mgmt</module>
                         <module>itop-core-update</module>
                         <module>itop-files-information</module>
-                        <module>itop-log-mgmt</module>
                         <module>itop-profiles-itil</module>
                         <module>itop-tickets</module>
                         <module>itop-welcome-itil</module>
