@@ -80,7 +80,7 @@
         <step>
             <title>IP, DNS and DHCP Management options</title>
             <description><![CDATA[<h2>The options below allow you to set the IP, DNS and DHCP capabilities of TeemIp.</h2>]]></description>
-            <banner>/datamodels/2.x/teemip-ip-mgmt/images/ipaddress.png</banner>
+            <banner>/datamodels/2.x/teemip-core-ip-mgmt/teemip-ip-mgmt/asset/img/ipaddress.png</banner>
             <options type="array">
                 <choice>
                     <extension_code>teemip-ip-mgmt-core</extension_code>
@@ -129,7 +129,7 @@
         <step>
             <title>Request Management options</title>
             <description><![CDATA[<h2>Decide whether you want to include a Helpdesk in TeemIP.</h2>]]></description>
-            <banner>/datamodels/2.x/teemip-request-mgmt/images/iprequest.png</banner>
+            <banner>/datamodels/2.x/teemip-request-mgmt/teemip-request-mgmt/asset/img/iprequest.png</banner>
             <alternatives type="array">
                 <choice>
                     <extension_code>teemip-request-mgmt</extension_code>
