@@ -18,6 +18,7 @@
                         <module>itop-config-mgmt</module>
                         <module>itop-core-update</module>
                         <module>itop-files-information</module>
+                        <module>itop-object-copier</module>
                         <module>itop-profiles-itil</module>
                         <module>itop-tickets</module>
                         <module>itop-welcome-itil</module>
@@ -129,7 +130,7 @@
         <step>
             <title>Request Management options</title>
             <description><![CDATA[<h2>Decide whether you want to include a Helpdesk in TeemIP.</h2>]]></description>
-            <banner>/datamodels/2.x/teemip-request-mgmt/teemip-request-mgmt/asset/img/iprequest.png</banner>
+            <banner>/datamodels/2.x/teemip-ip-request-mgmt/teemip-request-mgmt/asset/img/iprequest.png</banner>
             <alternatives type="array">
                 <choice>
                     <extension_code>teemip-request-mgmt</extension_code>
