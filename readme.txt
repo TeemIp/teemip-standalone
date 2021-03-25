@@ -1,4 +1,4 @@
-TeemIp - version 2.7.0 - 2020-12-20
+TeemIp - version 2.7.1 - 2021-04-01
 Readme file
 
 1.   ABOUT THIS RELEASE
@@ -8,7 +8,7 @@ Readme file
 
 1. ABOUT THIS RELEASE
    ==================
-Thank you for downloading the 27th packaged release of TeemIp. This is the product version of release 2.7.0.
+Thank you for downloading the 28th packaged release of TeemIp. This is the product version of release 2.7.1.
 
 TeemIp's documentation can be found at: https://wiki.teemip.net.
 iTop's documentation is available as a Wiki at: https://www.itophub.io/wiki/page.
@@ -34,10 +34,10 @@ For installation instructions, please refer to: https://www.itophub.io/wiki/page
 3. FEATURES
    ========
 
-TeemIp 2.7.0 supports all the new features brought by iTop 2.7.3 and has been adapted to it.
+TeemIp 2.7.1 supports all the new features brought by iTop 2.7.4 and has been adapted to it.
 iTop new featured are documented at : https://www.itophub.io/wiki/page?id=2_7_0%3Arelease%3A2_7_whats_new
 
-In what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=2_x:whatsnew:start#section270
+In what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=2_x:whatsnew:start#section271
 
 
 Localization
