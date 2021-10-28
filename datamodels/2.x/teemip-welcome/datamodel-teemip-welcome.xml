@@ -3,42 +3,127 @@
   <dictionaries>
     <dictionary id="DE DE" _delta="must_exist">
       <entries>
-        <entry id="Menu:WelcomeMenu+" _delta="redefine"><![CDATA[Willkommen bei TeemIp]]></entry>
-        <entry id="Menu:WelcomeMenuPage+" _delta="redefine"><![CDATA[Willkommen bei TeemIp]]></entry>
         <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
+        <entry id="UI:WelcomeMenu:LeftBlock" _delta="redefine"><![CDATA[
+<p>TeemIp ist ein umfangreiches OpenSource IP Management Verwaltungstool.</p>
+<p>It includes:</p>
+<ul>
+<li>Eine vollstädnige IP Datenbank, um Ihre IPv4 und IPv6 Adressen und Adressräume zu dokumentieren und zu Verwalten:</li>
+<ul>
+<li>Definieren Sie Ihren IP Plan und verwalten Sie Subnetze</li>
+<li>Verbinden Sie IP Bereiche (Ranges) mit Ihren Subnetzen</li>
+<li>Registrieren Sie IPs und bekommen Sie einen klaren Überblick über Ihren IP Raum-Verbrauch</li>
+</ul>
+<li>Ein Portal, in dem Endbenutzer Anfragen aufgeben können.</li>
+<li>Ein Helpdesk Modul, um Benutzeranfragen bearbeiten zu können.</li>
+<li>Eine CMDB (Configuration Management Datenbank) um Ihre IT Infrastruktur zu dokumentieren und zu verwalten.</li>
+<li>Mit Dashboards einen schnellen Überblick über Ihren IP Adress-Verbrauch bekommen</li>
+</ul>
+<p>Alle Module können unabhängig voneinander installiert werden.</p>
+]]>
+        </entry>
+        <entry id="UI:WelcomeMenu:RightBlock" _delta="redefine"><![CDATA[
+<p>Die umfangreichen TeemIp Tools sind "best in class" IP Management Werkzeuge, mit denen Sie die Kundenzufriedenheit steigern und dem Management einen Überblick über die Business Performance geben können:</p>
+<ul>
+<li>Kapazitätsplanung</li>
+<li>Proaktive Benachrichtigungen</li>
+<li>CSV-Import Werkzeug für allen Typen von Daten</li>
+<li>Synchronisation mit externen Datenquellen</li>
+</ul>
+</p>
+<p>TeemIp ist für die Anforderungen von Service Providern optimiert. Es erlaubt IT Mitarbeiter, in einfacher Weise viele Kunden und Organisationen zu managen. TeemIp ist komplett offen, um es leicht in Ihre aktuelle IT Infrastruktur integrieren zu können.</p>
+<p>Neben dieser Standalone Version kann man TeemIP auch als Modul des IT Operational Portals <a href="http://sourceforge.net/projects/itop/">iTop</a> installieren. In diesem Setup können Sie zusätzlich zu IP Adressen auch alle anderen IT Assets verwalten und darüberhinaus auch die IT Service Management Prozesse optimieren.
+</p>
+        </entry>
       </entries>
     </dictionary>
     <dictionary id="EN US" _delta="must_exist">
       <entries>
-        <entry id="Menu:WelcomeMenu+" _delta="redefine"><![CDATA[Welcome to TeemIp]]></entry>
-        <entry id="Menu:WelcomeMenuPage+" _delta="redefine"><![CDATA[Welcome to TeemIp]]></entry>
         <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
+        <entry id="UI:WelcomeMenu:LeftBlock" _delta="redefine"><![CDATA[
+<p>TeemIp is a comprehensive, OpenSource, IP Management tool.</p>
+<p>It includes:</p>
+<ul>
+<li>A complete IP database to document and manage your IPv4 and IPv6 spaces:</li>
+<ul>
+<li>Define your IP Plan and manage Subnets</li>
+<li>Attach IP ranges to your subnets</li>
+<li>Register IPs and get a clear view on the IP space consumption</li>
+</ul>
+<li>A portal where end users can log requests</li>
+<li>A Helpdesk module to handle user requests</li>
+<li>A CMDB (Configuration management database) to document and manage the IT inventory.</li>
+<li>Dashboards to quickly get an overview of your IP assets.</li>
+</ul>
+<p>All the modules can be setup, step by step, indepently of each other.</p>',
+]]>
+        </entry>
+        <entry id="UI:WelcomeMenu:RightBlock" _delta="redefine"><![CDATA[
+<p>TeemIp feature-rich set of tools brings best in class IP Management practices that improves customer satisfaction and provides executives with insights into business performance:</p>
+<ul>
+<li>Capacity Planning</li>
+<li>Proactive Notifications</li>
+<li>CSV import tool for all data</li>
+<li>Data synchronization (data federation)</li>
+</ul>
+</p>
+<p>TeemIp is service provider oriented. It allows IT engineers to easily manage multiple customers or organizations. It is completely open to be integrated within your current IT Management infrastructure.</p>
+<p>Next to this standalone version, you can get and install TeemIp as a module, on top of the IT Operational Portal <a href="http://sourceforge.net/projects/itop/">iTop</a>. Such setup will allow you to benefit from all TeemIp features next to the IPAM capabilities of TeemIp.
+</p>
+]]>
+        </entry>
       </entries>
     </dictionary>
     <dictionary id="ES CR" _delta="must_exist">
       <entries>
-        <entry id="Menu:WelcomeMenu+" _delta="redefine"><![CDATA[Bienvenido a TeemIp]]></entry>
-        <entry id="Menu:WelcomeMenuPage+" _delta="redefine"><![CDATA[Bienvenido a TeemIp]]></entry>
         <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
       </entries>
     </dictionary>
     <dictionary id="FR FR" _delta="must_exist">
       <entries>
-        <entry id="Menu:WelcomeMenu+" _delta="redefine"><![CDATA[Bienvenue dans TeemIp]]></entry>
-        <entry id="Menu:WelcomeMenuPage+" _delta="redefine"><![CDATA[Bienvenue dans TeemIp]]></entry>
         <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
+        <entry id="UI:WelcomeMenu:LeftBlock" _delta="redefine"><![CDATA[
+TeemIp est un outil d\'IP Management complet et libre pour gérer votre espace IP.</p>
+<p>Il contient:</p>
+<ul>
+<li>Une base de données IP pour documenter et gérer vos espaces IPv4 et IPv6 :</li>
+<ul>
+<li>Définissez votre plan IP et gérez vos sous-réseaux</li>
+<li>Liez des plages d\'IPs à vos sous-réseaux</li>
+<li>Enregistrez des adresses et gardez le contrôle de la consommation de votre espace</li>
+</ul>
+<li>Un portail permettant à un utilisateur de faire une demande pour une IP ou un sous-réseau.</li>
+<li>Un module de gestion des demandes pour traiter les demandes utilisateurs.</li>
+<li>Un module de gestion des configurations (CMDB - Configuration management database) pour documenter et gérer vos équipements réseau.
+<li>Des tableaux de bord pour avoir une vue synthétique sur vos objets IP.</li>
+</ul>
+<p>Tous ces modules peuvent être installés séparément, à votre rythme.</p>
+]]>
+        </entry>
+        <entry id="UI:WelcomeMenu:RightBlock" _delta="redefine"><![CDATA[
+<p><p>L\'outilage de TeemIp vous apporte les meilleurs pratiques de l\'IP Management pour améliorer la satisfaction client et fournir aux responsables des vues sur la performance interne:</p>
+<ul>
+<li>Gestion de la capacité</li>
+<li>Notifications pro-actives</li>
+<li>Outil d\'import CSV pour toutes les données</li>
+<li>Synchronisation des données</li>
+</ul>
+</p>
+<p>TeemIp a été conçu pour les fournisseurs de service. Il permet à vos équipes IT de gérer facilement de multiples clients et organisations. C\'est un logiciel ouvert qui peut être intégré avec votre infrastructure de gestion de l\'IT.</p>
+<p>En parallèle de cette version \'standalone\', vous pouvez télécharger et installer TeemIp comme un module du logiciel de gestion de l\'IT <a href="http://sourceforge.net/projects/itop/">iTop</a>. Une telle installation vous permettra de bénéficier de toutes les foncionalités de TeemIp en plus de celles relatives à l\'IP Management de TeemIp.
+</p>
+]]>
+        </entry>
       </entries>
     </dictionary>
     <dictionary id="IT IT" _delta="must_exist">
       <entries>
-        <entry id="Menu:WelcomeMenu+" _delta="redefine"><![CDATA[Benvenuto in TeemIp]]></entry>
-        <entry id="Menu:WelcomeMenuPage+" _delta="redefine"><![CDATA[Benvenuto in TeemIp]]></entry>
         <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
       </entries>
     </dictionary>
   </dictionaries>
   <menus>
-    <menu id="WelcomeMenuPage" xsi:type="DashboardMenuNode" _delta="redefine">
+    <menu id="WelcomeMenuPage" xsi:type="DashboardMenuNode" _delta="define">
       <rank>10</rank>
       <parent>WelcomeMenu</parent>
       <definition>

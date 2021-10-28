@@ -12,7 +12,6 @@
                     <description>All the base objects that are mandatory in the TeemIp CMDB: Organizations, Locations, Teams, Persons, etc.</description>
                     <modules type="array">
                         <module>combodo-db-tools</module>
-                        <module>combodo-menu-filter</module>
                         <module>email-reply</module>
                         <module>itop-attachments</module>
                         <module>itop-backup</module>
@@ -23,7 +22,6 @@
                         <module>itop-object-copier</module>
                         <module>itop-profiles-itil</module>
                         <module>itop-tickets</module>
-                        <module>itop-welcome-itil</module>
                         <module>molkobain-console-tooltips</module>
                         <module>molkobain-fontawesome5-pack</module>
                         <module>molkobain-handy-framework</module>
