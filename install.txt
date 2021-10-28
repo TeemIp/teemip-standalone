@@ -1,3 +1,3 @@
 For installation instructions, please refer to iTop installation and upgrade directives at :
 
-https://wiki.openitop.org/doku.php?id=2_7_0:install:start
+https://wiki.openitop.org/doku.php?id=3_0_0:install:start
