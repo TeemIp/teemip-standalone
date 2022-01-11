@@ -23,7 +23,6 @@
                         <module>itop-profiles-itil</module>
                         <module>itop-tickets</module>
                         <module>molkobain-console-tooltips</module>
-                        <module>molkobain-fontawesome5-pack</module>
                         <module>molkobain-handy-framework</module>
                         <module>molkobain-newsroom-provider</module>
                     </modules>
