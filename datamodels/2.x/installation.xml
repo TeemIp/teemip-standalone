@@ -22,9 +22,6 @@
                         <module>itop-object-copier</module>
                         <module>itop-profiles-itil</module>
                         <module>itop-tickets</module>
-                        <module>molkobain-console-tooltips</module>
-                        <module>molkobain-handy-framework</module>
-                        <module>molkobain-newsroom-provider</module>
                     </modules>
                     <mandatory>true</mandatory>
                 </choice>
@@ -35,6 +32,8 @@
                     <modules type="array">
                         <module>itop-datacenter-mgmt</module>
                         <module>itop-storage-mgmt</module>
+                        <module>teemip-service-datacenter-mgmt-adaptor</module>
+                        <module>teemip-service-storage-mgmt-adaptor</module>
                     </modules>
                     <default>true</default>
                 </choice>
@@ -44,6 +43,7 @@
                     <description>Manage devices related to end-users: PCs, Phones, Tablets, etc.</description>
                     <modules type="array">
                         <module>itop-endusers-devices</module>
+                        <module>teemip-service-endusers-devices-adaptor</module>
                     </modules>
                     <default>true</default>
                 </choice>
@@ -53,6 +53,7 @@
                     <description>Manage Hypervisors, Virtual Machines and Farms.</description>
                     <modules type="array">
                         <module>itop-virtualization-mgmt</module>
+                        <module>teemip-service-virtualization-mgmt-adaptor</module>
                     </modules>
                     <default>true</default>
                 </choice>
@@ -63,7 +64,8 @@
                     <modules type="array">
                         <module>teemip-network-mgmt</module>
                         <module>teemip-network-mgmt-extended</module>
-                    </modules>
+                        <module>teemip-service-mgmt-adaptor</module>
+                   </modules>
                     <mandatory>true</mandatory>
                 </choice>
                 <choice>
@@ -71,6 +73,10 @@
                     <title>Rack management from Molkobain</title>
                     <description>Graphically manage and visualize your racks and enclosures.</description>
                     <modules type="array">
+                        <module>molkobain-console-tooltips</module>
+                        <module>molkobain-fontawesome5-pack</module>
+                        <module>molkobain-handy-framework</module>
+                        <module>molkobain-newsroom-provider</module>
                         <module>molkobain-datacenter-view</module>
                     </modules>
                     <default>true</default>
@@ -137,7 +143,6 @@
                     <description>This option will enable the Helpdesk features.</description>
                     <modules type="array">
                         <module>teemip-request-mgmt</module>
-                        <module>molkobain-caselogs-toggler</module>
                     </modules>
                     <default>false</default>
                     <sub_options>
