@@ -1,4 +1,4 @@
-TeemIp - version 3.0.0 - 2022-01-11
+TeemIp - version 3.0.0 - 2022-01-20
 Readme file
 
 1.   ABOUT THIS RELEASE
@@ -22,7 +22,7 @@ Molkobain for his nice and valuable extensions.
 Maria Laura Colantoni from Qinet for her Italian translation.
 Miguel Turrubiates for his Spanish Castellano translation.
 Michael Blank and Martin Raenker from ITOMIG GmbH for their German translation.
-The whole Combodo team that you can meet at: http://www.combodo.com/who-are-we
+The whole Combodo team that you can meet at: https://www.combodo.com/who-are-we
 
 
 2. INSTALLATION
