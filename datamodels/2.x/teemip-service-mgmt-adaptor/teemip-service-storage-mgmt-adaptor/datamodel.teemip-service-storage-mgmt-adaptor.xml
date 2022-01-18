@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design version="3.0">
+  <classes>
+	  <class id="StorageSystem" _delta="if_exists">
+			<presentation>
+				<details>
+					<items>
+						<item id="providercontracts_list" _delta="delete_if_exists"/>
+						<item id="services_list" _delta="delete_if_exists"/>
+					</items>
+				</details>
+			</presentation>
+	  </class>
+	  <class id="SANSwitch" _delta="if_exists">
+			<presentation>
+				<details>
+					<items>
+						<item id="providercontracts_list" _delta="delete_if_exists"/>
+						<item id="services_list" _delta="delete_if_exists"/>
+					</items>
+				</details>
+			</presentation>
+	  </class>
+	  <class id="TapeLibrary" _delta="if_exists">
+			<presentation>
+				<details>
+					<items>
+						<item id="providercontracts_list" _delta="delete_if_exists"/>
+						<item id="services_list" _delta="delete_if_exists"/>
+					</items>
+				</details>
+			</presentation>
+	  </class>
+	  <class id="NAS" _delta="if_exists">
+			<presentation>
+				<details>
+					<items>
+						<item id="providercontracts_list" _delta="delete_if_exists"/>
+						<item id="services_list" _delta="delete_if_exists"/>
+					</items>
+				</details>
+			</presentation>
+	  </class>
+  </classes>
+</itop_design>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extension format="1.0">
+	<extension_code>teemip-service-mgmt-adaptor</extension_code>
+	<company>TeemIp</company>
+	<author><![CDATA[Christophe Naud]]></author>
+	<label><![CDATA[Service Management Adaptor]]></label>
+	<description><![CDATA[TeemIp extension that removes service dependencies from CIs]]></description>
+	<version>1.0.0</version>
+	<release_date>2022-01-21</release_date>
+	<version_description></version_description>
+	<itop_version_min>3.0.0</itop_version_min>
+	<status>stable</status>
+	<mandatory>false</mandatory>
+	<more_info_url></more_info_url>
+</extension>
