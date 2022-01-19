@@ -19,16 +19,14 @@ SetupWebPage::AddModule(
 			'teemip-virtualization-mgmt-adaptor/3.0.0',
 		),
 		'mandatory' => false,
-		'visible' => false,
+		'visible' => true, // To prevent auto-install but shall not be listed in the install wizard
+		'auto_select' => 'SetupInfo::ModuleIsSelected("teemip-virtualization-mgmt-adaptor")',
 
 		// Components
 		//
-		'datamodel' => array(
-		),
-		'data.struct' => array(
-		),
-		'data.sample' => array(
-		),
+		'datamodel' => array(),
+		'data.struct' => array(),
+		'data.sample' => array(),
 
 		// Documentation
 		//

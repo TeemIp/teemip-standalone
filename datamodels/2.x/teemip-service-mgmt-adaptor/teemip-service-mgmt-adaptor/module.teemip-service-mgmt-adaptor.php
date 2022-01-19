@@ -19,16 +19,14 @@ SetupWebPage::AddModule(
 			'teemip-network-mgmt-extended/3.0.0',
 		),
 		'mandatory' => false,
-		'visible' => false,
+		'visible' => true, // To prevent auto-install but shall not be listed in the install wizard
+		'auto_select' => 'SetupInfo::ModuleIsSelected("teemip-network-mgmt-extended")',
 
 		// Components
 		//
-		'datamodel' => array(
-		),
-		'data.struct' => array(
-		),
-		'data.sample' => array(
-		),
+		'datamodel' => array(),
+		'data.struct' => array(),
+		'data.sample' => array(),
 
 		// Documentation
 		//
