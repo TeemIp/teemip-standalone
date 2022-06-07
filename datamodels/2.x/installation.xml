@@ -4,7 +4,7 @@
         <step>
             <title>Configuration Management options</title>
             <description><![CDATA[<h2>The options below allow you to configure the type of elements that are to be managed inside TeemIp's CMDB.</h2>]]></description>
-            <banner>/images/modules.png</banner>
+            <banner>/images/icons/icons8-apps-tab.svg</banner>
             <options type="array">
                 <choice>
                     <extension_code>itop-config-mgmt-core</extension_code>
@@ -86,7 +86,7 @@
         <step>
             <title>IP, DNS and DHCP Management options</title>
             <description><![CDATA[<h2>The options below allow you to set the IP, DNS and DHCP capabilities of TeemIp.</h2>]]></description>
-            <banner>/datamodels/2.x/teemip-core-ip-mgmt/teemip-ip-mgmt/asset/img/ipaddress.png</banner>
+            <banner>/datamodels/2.x/teemip-core-ip-mgmt/teemip-ip-mgmt/asset/img/icons8-rj45-48.png</banner>
             <options type="array">
                 <choice>
                     <extension_code>teemip-ip-mgmt-core</extension_code>
