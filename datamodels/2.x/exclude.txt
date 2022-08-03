@@ -1,6 +1,3 @@
 #
 # The following source files are not re-distributed with the "build" of the application
 #
-email-reply/data.struct.ta-actions.xml
-email-reply/data.struct.ta-links.xml
-email-reply/data.struct.ta-triggers.xml
