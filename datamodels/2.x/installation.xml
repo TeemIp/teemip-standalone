@@ -19,6 +19,7 @@
                         <module>itop-config-mgmt</module>
                         <module>itop-core-update</module>
                         <module>itop-files-information</module>
+                        <module>itop-oauth-client</module>
                         <module>itop-object-copier</module>
                         <module>itop-profiles-itil</module>
                         <module>itop-tickets</module>
