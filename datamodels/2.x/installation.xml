@@ -11,7 +11,9 @@
                     <title>Configuration Management Core</title>
                     <description>All the base objects that are mandatory in the TeemIp CMDB: Organizations, Locations, Teams, Persons, etc.</description>
                     <modules type="array">
+            						<module>combodo-backoffice-darkmoon-theme</module>
                         <module>combodo-db-tools</module>
+            						<module>combodo-webhook-integration</module>
                         <module>email-reply</module>
                         <module>itop-attachments</module>
                         <module>itop-backup</module>
@@ -22,7 +24,10 @@
                         <module>itop-oauth-client</module>
                         <module>itop-object-copier</module>
                         <module>itop-profiles-itil</module>
+            						<module>itop-structure</module>
+            						<module>itop-themes-compat</module>
                         <module>itop-tickets</module>
+            						<module>itop-welcome-itil</module>
                     </modules>
                     <mandatory>true</mandatory>
                 </choice>
