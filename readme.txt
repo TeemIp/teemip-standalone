@@ -1,4 +1,4 @@
-TeemIp - version 3.0.1 - 2022-09-01
+TeemIp - version 3.0.1 - 2022-09-16
 Readme file
 
 1.   ABOUT THIS RELEASE
@@ -34,7 +34,7 @@ For installation instructions, please refer to: https://www.itophub.io/wiki/page
 3. FEATURES
    ========
 
-TeemIp 3.0.1 supports all the new features brought by iTop 3.0.2 and has been adapted to it.
+TeemIp 3.0.1 supports all the new features brought by iTop 3.0.2-1 and has been adapted to it.
 iTop new featured are documented at : https://www.itophub.io/wiki/page?id=3_0_0%3Arelease%3A3_0_whats_new
 
 In what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=2_x:whatsnew:start#section300
