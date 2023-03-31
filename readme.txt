@@ -1,4 +1,4 @@
-TeemIp - version 3.0.1 - 2022-09-16
+TeemIp - version 3.0.2 - 2023-04-01
 Readme file
 
 1.   ABOUT THIS RELEASE
@@ -8,7 +8,7 @@ Readme file
 
 1. ABOUT THIS RELEASE
    ==================
-Thank you for downloading the 30th packaged release of TeemIp. This is the product version of release 3.0.1.
+Thank you for downloading the 31st packaged release of TeemIp. This is the product version of release 3.0.2.
 
 TeemIp's documentation can be found at: https://wiki.teemip.net.
 iTop's documentation is available as a Wiki at: https://www.itophub.io/wiki/page.
@@ -24,21 +24,16 @@ Miguel Turrubiates for his Spanish Castellano translation.
 Michael Blank and Martin Raenker from ITOMIG GmbH as well as Christian Beer for their German translation.
 The whole Combodo team that you can meet at: https://www.combodo.com/who-are-we
 
-
 2. INSTALLATION
    ============
-
 For installation instructions, please refer to: https://www.itophub.io/wiki/page?id=3_0_0:install:start
-
 
 3. FEATURES
    ========
-
-TeemIp 3.0.1 supports all the new features brought by iTop 3.0.2-1 and has been adapted to it.
+TeemIp 3.0.2 supports all the new features brought by iTop 3.0.3 and has been adapted to it.
 iTop new featured are documented at : https://www.itophub.io/wiki/page?id=3_0_0%3Arelease%3A3_0_whats_new
 
-In what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=2_x:whatsnew:start#section300
-
+In what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=2_x:whatsnew:start#section302
 
 Localization
 ------------
