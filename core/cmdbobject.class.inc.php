@@ -149,10 +149,10 @@ abstract class CMDBObject extends DBObject
 	 */
 	public static function GetCurrentChange($bAutoCreate = true)
 	{
-		if ($bAutoCreate && is_null(self::$m_oCurrChange)) {
+		if ($bAutoCreate && is_null(self::$m_oCurrChange))
+		{
 			self::CreateChange();
 		}
-
 		return self::$m_oCurrChange;
 	}
 
@@ -215,7 +215,7 @@ abstract class CMDBObject extends DBObject
 			return CMDBChange::GetCurrentUserName();
 		} else {
 			//N°5135 - add impersonation information in activity log/current cmdb change
-			if (UserRights::IsImpersonated()) {
+			if (UserRights::IsImpersonated()){
 				return sprintf("%s (%s)", CMDBChange::GetCurrentUserName(), self::$m_sInfo);
 			} else {
 				return self::$m_sInfo;
@@ -235,9 +235,12 @@ abstract class CMDBObject extends DBObject
 		if (is_null(self::$m_sUserId)
 			//N°5135 - indicate impersonation inside changelogs
 			&& (false === UserRights::IsImpersonated())
-		) {
+		)
+		{
 			return CMDBChange::GetCurrentUserId();
-		} else {
+		}
+		else
+		{
 			return self::$m_sUserId;
 		}
 	}
@@ -247,9 +250,12 @@ abstract class CMDBObject extends DBObject
 	 */
 	protected static function GetTrackOrigin()
 	{
-		if (is_null(self::$m_sOrigin)) {
+		if (is_null(self::$m_sOrigin))
+		{
 			return 'interactive';
-		} else {
+		}
+		else
+		{
 			return self::$m_sOrigin;
 		}
 	}
@@ -349,60 +355,66 @@ abstract class CMDBObject extends DBObject
 	protected function RecordAttChange($sAttCode, $original, $value)
 	{
 		$oAttDef = MetaModel::GetAttributeDef(get_class($this), $sAttCode);
-		if ($oAttDef->IsExternalField()) {
-			return;
-		}
-		if ($oAttDef->IsLinkSet()) {
-			return;
-		}
-		if ($oAttDef->GetTrackingLevel() == ATTRIBUTE_TRACKING_NONE) {
-			return;
-		}
+		if ($oAttDef->IsExternalField()) return;
+		if ($oAttDef->IsLinkSet()) return;
+		if ($oAttDef->GetTrackingLevel() == ATTRIBUTE_TRACKING_NONE) return;
 
-		if ($oAttDef instanceof AttributeOneWayPassword) {
+		if ($oAttDef instanceOf AttributeOneWayPassword)
+		{
 			// One Way encrypted passwords' history is stored -one way- encrypted
 			$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeOneWayPassword");
 			$oMyChangeOp->Set("objclass", get_class($this));
 			$oMyChangeOp->Set("objkey", $this->GetKey());
 			$oMyChangeOp->Set("attcode", $sAttCode);
 
-			if (is_null($original)) {
+			if (is_null($original))
+			{
 				$original = '';
 			}
 			$oMyChangeOp->Set("prev_pwd", $original);
 			$iId = $oMyChangeOp->DBInsertNoReload();
-		} elseif ($oAttDef instanceof AttributeEncryptedString) {
+		}
+		elseif ($oAttDef instanceOf AttributeEncryptedString)
+		{
 			// Encrypted string history is stored encrypted
 			$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeEncrypted");
 			$oMyChangeOp->Set("objclass", get_class($this));
 			$oMyChangeOp->Set("objkey", $this->GetKey());
 			$oMyChangeOp->Set("attcode", $sAttCode);
 
-			if (is_null($original)) {
+			if (is_null($original))
+			{
 				$original = '';
 			}
 			$oMyChangeOp->Set("prevstring", $original);
 			$iId = $oMyChangeOp->DBInsertNoReload();
-		} elseif ($oAttDef instanceof AttributeBlob) {
+		}
+		elseif ($oAttDef instanceOf AttributeBlob)
+		{
 			// Data blobs
 			$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeBlob");
 			$oMyChangeOp->Set("objclass", get_class($this));
 			$oMyChangeOp->Set("objkey", $this->GetKey());
 			$oMyChangeOp->Set("attcode", $sAttCode);
 
-			if (is_null($original)) {
+			if (is_null($original))
+			{
 				$original = new ormDocument();
 			}
 			$oMyChangeOp->Set("prevdata", $original);
 			$iId = $oMyChangeOp->DBInsertNoReload();
-		} elseif ($oAttDef instanceof AttributeStopWatch) {
+		}
+		elseif ($oAttDef instanceOf AttributeStopWatch)
+		{
 			// Stop watches - record changes for sub items only (they are visible, the rest is not visible)
 			//
-			foreach ($oAttDef->ListSubItems() as $sSubItemAttCode => $oSubItemAttDef) {
+			foreach ($oAttDef->ListSubItems() as $sSubItemAttCode => $oSubItemAttDef)
+			{
 				$item_value = $oAttDef->GetSubItemValue($oSubItemAttDef->Get('item_code'), $value, $this);
 				$item_original = $oAttDef->GetSubItemValue($oSubItemAttDef->Get('item_code'), $original, $this);
 
-				if ($item_value != $item_original) {
+				if ($item_value != $item_original)
+				{
 					$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeScalar");
 					$oMyChangeOp->Set("objclass", get_class($this));
 					$oMyChangeOp->Set("objkey", $this->GetKey());
@@ -413,7 +425,9 @@ abstract class CMDBObject extends DBObject
 					$iId = $oMyChangeOp->DBInsertNoReload();
 				}
 			}
-		} elseif ($oAttDef instanceof AttributeCaseLog) {
+		}
+		elseif ($oAttDef instanceOf AttributeCaseLog)
+		{
 			$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeCaseLog");
 			$oMyChangeOp->Set("objclass", get_class($this));
 			$oMyChangeOp->Set("objkey", $this->GetKey());
@@ -421,39 +435,53 @@ abstract class CMDBObject extends DBObject
 
 			$oMyChangeOp->Set("lastentry", $value->GetLatestEntryIndex());
 			$iId = $oMyChangeOp->DBInsertNoReload();
-		} elseif ($oAttDef instanceof AttributeLongText) {
+		}
+		elseif ($oAttDef instanceOf AttributeLongText)
+		{
 			// Data blobs
-			if ($oAttDef->GetFormat() == 'html') {
+			if ($oAttDef->GetFormat() == 'html')
+			{
 				$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeHTML");
-			} else {
+			}
+			else
+			{
 				$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeLongText");
 			}
 			$oMyChangeOp->Set("objclass", get_class($this));
 			$oMyChangeOp->Set("objkey", $this->GetKey());
 			$oMyChangeOp->Set("attcode", $sAttCode);
 
-			if (!is_null($original) && ($original instanceof ormCaseLog)) {
+			if (!is_null($original) && ($original instanceof ormCaseLog))
+			{
 				$original = $original->GetText();
 			}
 			$oMyChangeOp->Set("prevdata", $original);
 			$iId = $oMyChangeOp->DBInsertNoReload();
-		} elseif ($oAttDef instanceof AttributeText) {
+		}
+		elseif ($oAttDef instanceOf AttributeText)
+		{
 			// Data blobs
-			if ($oAttDef->GetFormat() == 'html') {
+			if ($oAttDef->GetFormat() == 'html')
+			{
 				$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeHTML");
-			} else {
+			}
+			else
+			{
 				$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeText");
 			}
 			$oMyChangeOp->Set("objclass", get_class($this));
 			$oMyChangeOp->Set("objkey", $this->GetKey());
 			$oMyChangeOp->Set("attcode", $sAttCode);
 
-			if (!is_null($original) && ($original instanceof ormCaseLog)) {
+			if (!is_null($original) && ($original instanceof ormCaseLog))
+			{
 				$original = $original->GetText();
 			}
 			$oMyChangeOp->Set("prevdata", $original);
 			$iId = $oMyChangeOp->DBInsertNoReload();
-		} elseif ($oAttDef instanceof AttributeBoolean) {
+		}
+		elseif ($oAttDef instanceOf AttributeBoolean)
+		{
 			$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeScalar");
 			$oMyChangeOp->Set("objclass", get_class($this));
 			$oMyChangeOp->Set("objkey", $this->GetKey());
@@ -461,7 +489,9 @@ abstract class CMDBObject extends DBObject
 			$oMyChangeOp->Set("oldvalue", $original ? 1 : 0);
 			$oMyChangeOp->Set("newvalue", $value ? 1 : 0);
 			$iId = $oMyChangeOp->DBInsertNoReload();
-		} elseif ($oAttDef instanceof AttributeHierarchicalKey) {
+		}
+		elseif ($oAttDef instanceOf AttributeHierarchicalKey)
+		{
 			// Hierarchical keys
 			//
 			$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeScalar");
@@ -471,7 +501,9 @@ abstract class CMDBObject extends DBObject
 			$oMyChangeOp->Set("oldvalue", $original);
 			$oMyChangeOp->Set("newvalue", $value);
 			$iId = $oMyChangeOp->DBInsertNoReload();
-		} elseif ($oAttDef instanceof AttributeCustomFields) {
+		}
+		elseif ($oAttDef instanceOf AttributeCustomFields)
+		{
 			// Custom fields
 			//
 			$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeCustomFields");
@@ -480,7 +512,9 @@ abstract class CMDBObject extends DBObject
 			$oMyChangeOp->Set("attcode", $sAttCode);
 			$oMyChangeOp->Set("prevdata", json_encode($original->GetValues()));
 			$iId = $oMyChangeOp->DBInsertNoReload();
-		} elseif ($oAttDef instanceof AttributeURL) {
+		}
+		elseif ($oAttDef instanceOf AttributeURL)
+		{
 			// URLs
 			//
 			$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeURL");
@@ -490,17 +524,21 @@ abstract class CMDBObject extends DBObject
 			$oMyChangeOp->Set("oldvalue", $original);
 			$oMyChangeOp->Set("newvalue", $value);
 			$iId = $oMyChangeOp->DBInsertNoReload();
-		} elseif ($oAttDef instanceof AttributeSet) {
-			// Tag Set
-			//
-			$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeTagSet");
-			$oMyChangeOp->Set("objclass", get_class($this));
-			$oMyChangeOp->Set("objkey", $this->GetKey());
-			$oMyChangeOp->Set("attcode", $sAttCode);
-			$oMyChangeOp->Set("oldvalue", implode(' ', $original->GetValues()));
-			$oMyChangeOp->Set("newvalue", implode(' ', $value->GetValues()));
-			$iId = $oMyChangeOp->DBInsertNoReload();
-		} else {
+		}
+        elseif ($oAttDef instanceOf AttributeSet)
+        {
+            // Tag Set
+            //
+            $oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeTagSet");
+            $oMyChangeOp->Set("objclass", get_class($this));
+            $oMyChangeOp->Set("objkey", $this->GetKey());
+            $oMyChangeOp->Set("attcode", $sAttCode);
+            $oMyChangeOp->Set("oldvalue", implode(' ', $original->GetValues()));
+            $oMyChangeOp->Set("newvalue", implode(' ', $value->GetValues()));
+            $iId = $oMyChangeOp->DBInsertNoReload();
+        }
+        else
+		{
 			// Scalars
 			//
 			$oMyChangeOp = MetaModel::NewObject("CMDBChangeOpSetAttributeScalar");
@@ -531,10 +569,14 @@ abstract class CMDBObject extends DBObject
 
 		// $aValues is an array of $sAttCode => $value
 		//
-		foreach ($aValues as $sAttCode => $value) {
-			if (array_key_exists($sAttCode, $aOrigValues)) {
+		foreach ($aValues as $sAttCode=> $value)
+		{
+			if (array_key_exists($sAttCode, $aOrigValues))
+			{
 				$original = $aOrigValues[$sAttCode];
-			} else {
+			}
+			else
+			{
 				$original = null;
 			}
 			$this->RecordAttChange($sAttCode, $original, $value);
@@ -546,12 +588,12 @@ abstract class CMDBObject extends DBObject
 	 * The check should never fail, because the UI should prevent from such a usage
 	 * Anyhow, if the user has found a workaround... the security gets enforced here
 	 *
+	 * @deprecated 3.0.0 N°2591 will be removed in 3.1.0
+	 *
 	 * @param bool $bSkipStrongSecurity
 	 * @param int $iActionCode
 	 *
 	 * @throws \SecurityException
-	 * @deprecated 3.0.0 N°2591 will be removed in 3.1.0
-	 *
 	 */
 	protected function CheckUserRights($bSkipStrongSecurity, $iActionCode)
 	{
@@ -564,10 +606,12 @@ abstract class CMDBObject extends DBObject
 			// skip_strong_security = 0, in the config file
 			$bSkipStrongSecurity = MetaModel::GetConfig()->Get('skip_strong_security');
 		}
-		if (!$bSkipStrongSecurity) {
+		if (!$bSkipStrongSecurity)
+		{
 			$sClass = get_class($this);
 			$oSet = DBObjectSet::FromObject($this);
-			if (!UserRights::IsActionAllowed($sClass, $iActionCode, $oSet)) {
+			if (!UserRights::IsActionAllowed($sClass, $iActionCode, $oSet))
+			{
 				// Intrusion detected
 				throw new SecurityException('You are not allowed to modify objects of class: '.$sClass);
 			}
@@ -597,12 +641,12 @@ abstract class CMDBObject extends DBObject
 	{
 		// Copy the changes list before the update (the list should be reset afterwards)
 		$aChanges = $this->ListChanges();
-		if (count($aChanges) == 0) {
+		if (count($aChanges) == 0)
+		{
 			return;
 		}
 
 		$ret = parent::DBUpdate();
-
 		return $ret;
 	}
 
@@ -641,7 +685,6 @@ abstract class CMDBObject extends DBObject
 	protected function DBDeleteTracked_Internal(&$oDeletionPlan = null)
 	{
 		$ret = parent::DBDelete($oDeletionPlan);
-
 		return $ret;
 	}
 
@@ -667,7 +710,8 @@ abstract class CMDBObject extends DBObject
 		// Keep track of the previous values (will be overwritten when the objects are synchronized with the DB)
 		$aOriginalValues = array();
 		$oObjSet->Rewind();
-		while ($oItem = $oObjSet->Fetch()) {
+		while ($oItem = $oObjSet->Fetch())
+		{
 			$aOriginalValues[$oItem->GetKey()] = $oItem->m_aOrigValues;
 		}
 
@@ -676,11 +720,11 @@ abstract class CMDBObject extends DBObject
 
 		// Record... in many queries !!!
 		$oObjSet->Rewind();
-		while ($oItem = $oObjSet->Fetch()) {
+		while ($oItem = $oObjSet->Fetch())
+		{
 			$aChangedValues = $oItem->ListChangedValues($aValues);
 			$oItem->RecordAttChanges($aChangedValues, $aOriginalValues[$oItem->GetKey()]);
 		}
-
 		return $ret;
 	}
 
@@ -690,7 +734,8 @@ abstract class CMDBObject extends DBObject
 		$bOriginal = $this->Get('archive_flag');
 		parent::DBArchive();
 
-		if (!$bOriginal) {
+		if (!$bOriginal)
+		{
 			utils::PushArchiveMode(false);
 			$this->RecordAttChange('archive_flag', false, true);
 			utils::PopArchiveMode();
@@ -703,7 +748,8 @@ abstract class CMDBObject extends DBObject
 		$bOriginal = $this->Get('archive_flag');
 		parent::DBUnarchive();
 
-		if ($bOriginal) {
+		if ($bOriginal)
+		{
 			utils::PushArchiveMode(false);
 			$this->RecordAttChange('archive_flag', true, false);
 			utils::PopArchiveMode();
@@ -712,12 +758,13 @@ abstract class CMDBObject extends DBObject
 }
 
 
+
 /**
  * TODO: investigate how to get rid of this class that was made to workaround some language limitation... or a poor design!
  *
- * @internal
  * @package     iTopORM
  *
+ * @internal
  */
 class CMDBObjectSet extends DBObjectSet
 {
@@ -734,7 +781,6 @@ class CMDBObjectSet extends DBObjectSet
 		$oRetSet = new self($oFilter);
 		// NOTE: THIS DOES NOT WORK IF m_bLoaded is private in the base class (and you will not get any error message)
 		$oRetSet->m_bLoaded = true; // no DB load
-
 		return $oRetSet;
 	}
 
@@ -744,7 +790,6 @@ class CMDBObjectSet extends DBObjectSet
 	{
 		$oRetSet = self::FromScratch($sClass);
 		$oRetSet->AddObjectArray($aObjects, $sClass);
-
 		return $oRetSet;
 	}
 
@@ -760,10 +805,10 @@ class CMDBObjectSet extends DBObjectSet
 		$oRetSet = new CMDBObjectSet($oFilter);
 		$oRetSet->m_bLoaded = true; // no DB load
 
-		foreach ($aObjects as $rowIndex => $aObjectsByClassAlias) {
+		foreach($aObjects as $rowIndex => $aObjectsByClassAlias)
+		{
 			$oRetSet->AddObjectExtended($aObjectsByClassAlias);
 		}
-
 		return $oRetSet;
 	}
 }
