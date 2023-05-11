@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design version="3.0">
+  <classes>
+	  <class id="Rack" _delta="must_exist">
+			<presentation>
+				<details>
+					<items>
+						<item id="providercontracts_list" _delta="delete_if_exists"/>
+						<item id="services_list" _delta="delete_if_exists"/>
+					</items>
+				</details>
+			</presentation>
+	  </class>
+	  <class id="Enclosure" _delta="must_exist">
+			<presentation>
+				<details _delta="must_exist">
+					<items>
+						<item id="providercontracts_list" _delta="delete_if_exists"/>
+						<item id="services_list" _delta="delete_if_exists"/>
+					</items>
+				</details>
+			</presentation>
+	  </class>
+	  <class id="PowerConnection" _delta="must_exist">
+			<presentation>
+				<details _delta="must_exist">
+					<items>
+						<item id="providercontracts_list" _delta="delete_if_exists"/>
+						<item id="services_list" _delta="delete_if_exists"/>
+					</items>
+				</details>
+			</presentation>
+	  </class>
+	  <class id="PowerSource" _delta="must_exist">
+			<presentation>
+				<details _delta="must_exist">
+					<items>
+						<item id="providercontracts_list" _delta="delete_if_exists"/>
+						<item id="services_list" _delta="delete_if_exists"/>
+					</items>
+				</details>
+			</presentation>
+	  </class>
+	  <class id="PDU" _delta="must_exist">
+			<presentation>
+				<details _delta="must_exist">
+					<items>
+						<item id="providercontracts_list" _delta="delete_if_exists"/>
+						<item id="services_list" _delta="delete_if_exists"/>
+					</items>
+				</details>
+			</presentation>
+	  </class>
+  </classes>
+</itop_design>
