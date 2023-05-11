@@ -11,9 +11,9 @@
                     <title>Configuration Management Core</title>
                     <description>All the base objects that are mandatory in the TeemIp CMDB: Organizations, Locations, Teams, Persons, etc.</description>
                     <modules type="array">
-            						<module>combodo-backoffice-darkmoon-theme</module>
+                        <module>combodo-backoffice-darkmoon-theme</module>
                         <module>combodo-db-tools</module>
-            						<module>combodo-webhook-integration</module>
+                        <module>combodo-webhook-integration</module>
                         <module>email-reply</module>
                         <module>itop-attachments</module>
                         <module>itop-backup</module>
@@ -24,10 +24,10 @@
                         <module>itop-oauth-client</module>
                         <module>itop-object-copier</module>
                         <module>itop-profiles-itil</module>
-            						<module>itop-structure</module>
-            						<module>itop-themes-compat</module>
+                        <module>itop-structure</module>
+                        <module>itop-themes-compat</module>
                         <module>itop-tickets</module>
-            						<module>itop-welcome-itil</module>
+                        <module>itop-welcome-itil</module>
                     </modules>
                     <mandatory>true</mandatory>
                 </choice>
@@ -38,8 +38,15 @@
                     <modules type="array">
                         <module>itop-datacenter-mgmt</module>
                         <module>itop-storage-mgmt</module>
-                        <module>teemip-service-datacenter-mgmt-adaptor</module>
-                        <module>teemip-service-storage-mgmt-adaptor</module>
+                    </modules>
+                    <default>true</default>
+                </choice>
+                <choice>
+                    <extension_code>teemip-cable-mgmt</extension_code>
+                    <title>Cabling</title>
+                    <description>Document the cable layouts of your networks</description>
+                    <modules type="array">
+                        <module>teemip-cable-mgmt</module>
                     </modules>
                     <default>true</default>
                 </choice>
@@ -49,7 +56,6 @@
                     <description>Manage devices related to end-users: PCs, Phones, Tablets, etc.</description>
                     <modules type="array">
                         <module>itop-endusers-devices</module>
-                        <module>teemip-service-endusers-devices-adaptor</module>
                     </modules>
                     <default>true</default>
                 </choice>
@@ -59,7 +65,6 @@
                     <description>Manage Hypervisors, Virtual Machines and Farms.</description>
                     <modules type="array">
                         <module>itop-virtualization-mgmt</module>
-                        <module>teemip-service-virtualization-mgmt-adaptor</module>
                     </modules>
                     <default>true</default>
                 </choice>
@@ -70,7 +75,6 @@
                     <modules type="array">
                         <module>teemip-network-mgmt</module>
                         <module>teemip-network-mgmt-extended</module>
-                        <module>teemip-service-mgmt-adaptor</module>
                    </modules>
                     <mandatory>true</mandatory>
                 </choice>
@@ -84,6 +88,7 @@
                         <module>molkobain-handy-framework</module>
                         <module>molkobain-newsroom-provider</module>
                         <module>molkobain-datacenter-view</module>
+                        <module>teemip-service-datacenter-mgmt-adaptor</module>
                     </modules>
                     <default>true</default>
                 </choice>
@@ -148,6 +153,7 @@
                     <title>Helpdesk</title>
                     <description>This option will enable the Helpdesk features.</description>
                     <modules type="array">
+                        <module>combodo-workflow-graphical-view</module>
                         <module>teemip-request-mgmt</module>
                     </modules>
                     <default>false</default>
