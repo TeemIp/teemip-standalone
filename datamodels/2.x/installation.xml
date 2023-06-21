@@ -21,10 +21,12 @@
                         <module>itop-config-mgmt</module>
                         <module>itop-core-update</module>
                         <module>itop-files-information</module>
+                        <module>itop-legacy-search-base</module>
                         <module>itop-oauth-client</module>
                         <module>itop-object-copier</module>
                         <module>itop-profiles-itil</module>
                         <module>itop-structure</module>
+                        <module>itop-synchro-dashboard</module>
                         <module>itop-themes-compat</module>
                         <module>itop-tickets</module>
                         <module>itop-welcome-itil</module>
