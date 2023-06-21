@@ -130,48 +130,44 @@ TeemIp est un outil d\'IP Management complet et libre pour gérer votre espace I
     </dictionary>
   </dictionaries>
   <menus>
-    <menu id="WelcomeMenuPage" xsi:type="DashboardMenuNode" _delta="redefine">
-      <rank>10</rank>
-      <parent>WelcomeMenu</parent>
+    <menu id="WelcomeMenuPage" xsi:type="DashboardMenuNode" _delta="must_exist">
       <definition>
-        <layout>DashboardLayoutOneCol</layout>
-        <title></title>
         <cells>
-          <cell id="3">
-            <rank>3</rank>
+          <cell id="4" _delta="define">
+            <rank>4</rank>
             <dashlets>
-              <dashlet id="5" xsi:type="DashletHeaderDynamic">
+              <dashlet id="teemip-4-0" xsi:type="DashletHeaderStatic">
                 <rank>0</rank>
+                <title>Menu:IPManagement</title>
+                <icon>teemip-ip-mgmt/asset/img/icons8-internet-folder-48.png</icon>
+              </dashlet>
+              <dashlet id="teemip-4-1" xsi:type="DashletHeaderDynamic">
+                <rank>1</rank>
                 <title>Menu:IPv4Subnet+</title>
-                <icon>teemip-ip-mgmt/asset/img/ipsubnet.png</icon>
                 <subtitle>Menu:IPManagement:Overview:Total</subtitle>
+                <icon>teemip-ip-mgmt/asset/img/icons8-subnet-48.png</icon>
                 <query>SELECT IPv4Subnet</query>
                 <group_by>status</group_by>
-                <values>reserved,allocated,released</values>
+                <values>reserved,allocated,released,unassigned</values>
               </dashlet>
-              <dashlet id="6" xsi:type="DashletObjectList">
-                <rank>1</rank>
-                <title>Menu:IPv4Subnet:Allocated</title>
+              <dashlet id="teemip-4-2" xsi:type="DashletObjectList">
+                <rank>2</rank>
+                <title>Menu:IPv4Subnet:Allocated+</title>
                 <query>SELECT IPv4Subnet WHERE status = "allocated"</query>
                 <menu>true</menu>
               </dashlet>
-            </dashlets>
-          </cell>
-          <cell id="4">
-            <rank>4</rank>
-            <dashlets>
-              <dashlet id="7" xsi:type="DashletHeaderDynamic" _delta="define">
-                <rank>0</rank>
+             <dashlet id="teemip-4-3" xsi:type="DashletHeaderDynamic" _delta="define">
+                <rank>3</rank>
                 <title>Menu:IPv6Subnet+</title>
-                <icon>teemip-ipv6-mgmt/asset/img/ipv6subnet.png</icon>
                 <subtitle>Menu:IPManagement:Overview:Total</subtitle>
+                <icon>teemip-ipv6-mgmt/asset/img/icons8-subnetv6-48.png</icon>
                 <query>SELECT IPv6Subnet</query>
                 <group_by>status</group_by>
-                <values>reserved,allocated,released</values>
+                <values>reserved,allocated,released,unassigned</values>
               </dashlet>
-              <dashlet id="8" xsi:type="DashletObjectList" _delta="define">
-                <rank>1</rank>
-                <title>Menu:IPv6Subnet:Allocated</title>
+              <dashlet id="teemip-4-4" xsi:type="DashletObjectList" _delta="define">
+                <rank>4</rank>
+                <title>Menu:IPv6Subnet:Allocated+</title>
                 <query>SELECT IPv6Subnet WHERE status = "allocated"</query>
                 <menu>true</menu>
               </dashlet>
