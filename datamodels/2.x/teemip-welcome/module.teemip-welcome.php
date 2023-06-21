@@ -1,12 +1,12 @@
 <?php
-/**
- * @copyright   Copyright (C) 2021 TeemIp
+/*
+ * @copyright   Copyright (C) 2010-2023 TeemIp
  * @license     http://opensource.org/licenses/AGPL-3.0
  */
 
 SetupWebPage::AddModule(
 	__FILE__, // Path to the current file, all other file names are relative to the directory containing this file
-	'teemip-welcome/3.0.0',
+	'teemip-welcome/3.1.0',
 	array(
 		// Identification
 		//
@@ -16,6 +16,7 @@ SetupWebPage::AddModule(
 		// Setup
 		//
 		'dependencies' => array(
+			'itop-welcome-itil/3.1.0',
 		),
 		'mandatory' => true,
 		'visible' => false,
@@ -27,13 +28,10 @@ SetupWebPage::AddModule(
 			'model.teemip-welcome.php',
 		),
 		'webservice' => array(
-			//'webservices.itop-welcome-itil.php',
 		),
 		'data.struct' => array(
-			//'data.struct.itop-welcome-itil.xml',
 		),
 		'data.sample' => array(
-			//'data.sample.itop-welcome-itil.xml',
 		),
 		
 		// Documentation
@@ -44,7 +42,6 @@ SetupWebPage::AddModule(
 		// Default settings
 		//
 		'settings' => array(
-			//'some_setting' => 'some value',
 		),
 	)
 );
