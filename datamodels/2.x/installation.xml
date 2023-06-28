@@ -91,7 +91,7 @@
                 <choice>
                     <extension_code>teemip-network-mgmt</extension_code>
                     <title>Networking</title>
-                    <description>Adds network specific CIs like DNS domains, WAN links, AS numbers, Aggregate links, etc...</description>
+                    <description>Add network specific CIs like DNS domains, WAN links, AS numbers, Aggregate links, etc...</description>
                     <modules type="array">
                         <module>teemip-network-mgmt</module>
                         <module>teemip-network-mgmt-extended</module>
