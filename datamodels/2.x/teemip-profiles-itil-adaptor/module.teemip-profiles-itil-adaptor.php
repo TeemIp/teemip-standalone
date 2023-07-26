@@ -6,7 +6,7 @@
 
 SetupWebPage::AddModule(
 	__FILE__,
-	'teemip-profiles-itil-adaptor/3.0.0',
+	'teemip-profiles-itil-adaptor/3.1.0',
 	array(
 		// Identification
 		//
@@ -16,8 +16,8 @@ SetupWebPage::AddModule(
 		// Setup
 		//
 		'dependencies' => array(
-			'itop-profiles-itil/2.7.0',
-			'teemip-ip-mgmt/3.0.0',
+			'itop-profiles-itil/3.1.0',
+			'teemip-ip-mgmt/3.1.0',
 		),
 		'mandatory' => true,
 		'visible' => false,
