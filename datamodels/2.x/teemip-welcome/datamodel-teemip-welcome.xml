@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0">
   <branding>
-    <main_logo _delta="define">teemip-welcome/asset/img/teemip-logo.png</main_logo>
-    <main_logo_compact _delta="define">teemip-welcome/asset/img/teemip-logo-compact.png</main_logo_compact>
-    <login_logo _delta="define">teemip-welcome/asset/img/teemip-logo.png</login_logo>
-    <portal_logo _delta="define">teemip-welcome/asset/img/teemip-portal-logo.png</portal_logo>
+    <main_logo _delta="define">teemip-welcome/asset/img/teemip-logo.svg</main_logo>
+    <main_logo_compact _delta="define">teemip-welcome/asset/img/teemip-logo-compact.svg</main_logo_compact>
+    <login_logo _delta="define">teemip-welcome/asset/img/teemip-logo.svg</login_logo>
+    <portal_logo _delta="define">teemip-welcome/asset/img/teemip-logo.svg</portal_logo>
   </branding>
   <dictionaries>
     <dictionary id="DE DE" _delta="must_exist">
