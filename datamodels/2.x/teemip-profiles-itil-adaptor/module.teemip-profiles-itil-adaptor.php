@@ -1,12 +1,12 @@
 <?php
 /**
- * @copyright   Copyright (C) 2021 TeemIp
+ * @copyright   Copyright (C) 2023 TeemIp
  * @license     http://opensource.org/licenses/AGPL-3.0
  */
 
 SetupWebPage::AddModule(
 	__FILE__,
-	'teemip-profiles-itil-adaptor/3.1.0',
+	'teemip-profiles-itil-adaptor/3.1.1',
 	array(
 		// Identification
 		//
