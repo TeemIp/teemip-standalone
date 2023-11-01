@@ -15,6 +15,7 @@
                         <module>combodo-db-tools</module>
                         <module>combodo-webhook-integration</module>
                         <module>email-reply</module>
+                        <module>itop-admin-delegation-profiles</module>
                         <module>itop-attachments</module>
                         <module>itop-backup</module>
                         <module>itop-config</module>
