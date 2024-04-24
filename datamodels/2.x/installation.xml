@@ -55,7 +55,7 @@
                                     <module>molkobain-handy-framework</module>
                                     <module>molkobain-newsroom-provider</module>
                                     <module>molkobain-datacenter-view</module>
-                                    <module>teemip-service-datacenter-mgmt-adaptor</module>
+                                    <module>teemip-datacenter-view-adaptor</module>
                                 </modules>
                                 <default>false</default>
                             </choice>
