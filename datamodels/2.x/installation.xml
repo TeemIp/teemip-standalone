@@ -57,7 +57,7 @@
                                     <module>molkobain-datacenter-view</module>
                                     <module>teemip-datacenter-view-adaptor</module>
                                 </modules>
-                                <default>false</default>
+                                <default>true</default>
                             </choice>
                         </options>
                     </sub_options>
