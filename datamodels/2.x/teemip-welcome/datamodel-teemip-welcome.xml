@@ -116,7 +116,7 @@
                 <icon>teemip-ip-mgmt/asset/img/icons8-rj45-48.png</icon>
                 <query>SELECT IPv4Address</query>
                 <group_by>status</group_by>
-                <values>reserved,allocated,released,unassigned</values>
+                <values>reserved,allocated,released,unassigned,discovered</values>
               </dashlet>
               <dashlet id="teemip-2.2" xsi:type="DashletHeaderDynamic">
                 <rank>4</rank>
