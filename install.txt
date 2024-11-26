@@ -1,3 +1,1 @@
-For installation instructions, please refer to iTop installation and upgrade directives at :
-
-https://wiki.openitop.org/doku.php?id=3_2_0:install:start
+For installation instructions, please refer to TeemIP's wiki at: https://wiki.teemip.net/doku.php?id=download#install

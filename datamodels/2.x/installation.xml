@@ -18,6 +18,7 @@
                         <module>itop-admin-delegation-profiles</module>
                         <module>itop-attachments</module>
                         <module>itop-backup</module>
+                        <module>itop-bridge-cmdb-ticket</module>
                         <module>itop-config</module>
                         <module>itop-config-mgmt</module>
                         <module>itop-core-update</module>
@@ -77,6 +78,7 @@
                     <description>Manage devices related to end-users: PCs, Phones, Tablets, etc.</description>
                     <modules type="array">
                         <module>itop-endusers-devices</module>
+                        <module>sv-display-mgmt</module>
                     </modules>
                     <default>true</default>
                 </choice>
