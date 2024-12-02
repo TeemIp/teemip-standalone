@@ -32,7 +32,7 @@ For installation instructions, please refer to: https://wiki.teemip.net/doku.php
 
 3. FEATURES
    ========
-TeemIp 3.2.1 supports all the new features brought by iTop 3.2.0-2 and has been adapted to it.
+TeemIp 3.2.1 supports all the new features brought by iTop 3.2.0 and has been adapted to it.
 iTop new featured are documented at : https://www.itophub.io/wiki/page?id=3_2_0:release:whats_new
 
 In what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=download:whatsnew#section321
