@@ -176,6 +176,7 @@
                                 <description>Built-in customer portal designed for hand-held devices</description>
                                 <modules type="array">
                                     <module>itop-portal-base</module>
+                                    <module>itop-portal-new-look-for-3.2-lts</module>
                                     <module>teemip-portal</module>
                                 </modules>
                                 <default>false</default>
