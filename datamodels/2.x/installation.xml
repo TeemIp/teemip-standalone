@@ -32,6 +32,8 @@
                         <module>itop-themes-compat</module>
                         <module>itop-tickets</module>
                         <module>itop-welcome-itil</module>
+                        <module>molkobain-background-tasks-control-center</module>
+                        <module>sv-documents-folder</module>
                     </modules>
                     <mandatory>true</mandatory>
                 </choice>

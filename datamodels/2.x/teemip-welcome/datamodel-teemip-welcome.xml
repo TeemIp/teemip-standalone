@@ -32,6 +32,16 @@
         <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
       </entries>
     </dictionary>
+    <dictionary id="PT BR" _delta="must_exist">
+      <entries>
+        <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
+      </entries>
+    </dictionary>
+    <dictionary id="ZH CN" _delta="must_exist">
+      <entries>
+        <entry id="UI:Login:About" _delta="redefine"><![CDATA[]]></entry>
+      </entries>
+    </dictionary>
   </dictionaries>
   <menus>
     <menu id="WelcomeMenuPage" xsi:type="DashboardMenuNode" _delta="redefine">
