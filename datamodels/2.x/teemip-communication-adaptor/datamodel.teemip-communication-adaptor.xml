@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<itop_design xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.2" load="strict"
+ xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/TeemIp/teemip-core-ip-mgmt/refs/heads/master/teemip-framework/doc/design.xsd">
+  <menus>
+    <menu xsi:type="OQLMenuNode" id="Communication" _delta="redefine">
+      <parent>WelcomeMenu</parent>
+      <rank>15</rank>
+      <oql>SELECT Communication WHERE status != "closed"</oql>
+      <do_search>1</do_search>
+    </menu>
+  </menus>
+</itop_design>
