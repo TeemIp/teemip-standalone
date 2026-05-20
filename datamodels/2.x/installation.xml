@@ -11,19 +11,34 @@
                     <title>Configuration Management Core</title>
                     <description>All the base objects that are mandatory in the TeemIp CMDB: Organizations, Locations, Teams, Persons, etc.</description>
                     <modules type="array">
+                        <module>authent-token</module>
+                        <module>combodo-anonymizer</module>
+                        <module>combodo-background-task-extended</module>
                         <module>combodo-backoffice-darkmoon-theme</module>
+                        <module>combodo-backoffice-fullmoon-high-contrast-theme</module>
+                        <module>combodo-backoffice-fullmoon-protanopia-deuteranopia-theme</module>
+                        <module>combodo-backoffice-fullmoon-tritanopia-theme</module>
                         <module>combodo-db-tools</module>
+                        <module>combodo-my-account</module>
+                        <module>combodo-my-account-user-info</module>
+                        <module>combodo-password-expiration</module>
                         <module>combodo-webhook-integration</module>
                         <module>email-reply</module>
                         <module>itop-admin-delegation-profiles</module>
                         <module>itop-attachments</module>
+                        <module>itop-attribute-class-set</module>
+                        <module>itop-attribute-encrypted-password</module>
+                        <module>itop-background-tasks-control-center</module>
+                        <module>itop-backoffice-bluemoon-theme</module>
                         <module>itop-backup</module>
                         <module>itop-bridge-cmdb-ticket</module>
+                        <module>itop-communications</module>
                         <module>itop-config</module>
                         <module>itop-config-mgmt</module>
                         <module>itop-core-update</module>
                         <module>itop-files-information</module>
-                        <module>itop-legacy-search-base</module>
+                        <module>itop-iframe-dashlet</module>
+                        <module>itop-login-bluemoon-theme</module>
                         <module>itop-oauth-client</module>
                         <module>itop-object-copier</module>
                         <module>itop-profiles-itil</module>
@@ -32,6 +47,7 @@
                         <module>itop-themes-compat</module>
                         <module>itop-tickets</module>
                         <module>itop-welcome-itil</module>
+                        <module>itop-legacy-search-base</module>
                         <module>molkobain-background-tasks-control-center</module>
                         <module>sv-documents-folder</module>
                     </modules>
@@ -42,6 +58,7 @@
                     <title>Data Center and Storage Devices</title>
                     <description>Manage Data Center and Storage devices such as Racks, Enclosures, PDUs, NAS, SAN Switches, Tape Libraries, etc...</description>
                     <modules type="array">
+                        <module>itop-container-mgmt</module>
                         <module>itop-datacenter-mgmt</module>
                         <module>itop-storage-mgmt</module>
                     </modules>
@@ -90,6 +107,7 @@
                     <description>Manage Hypervisors, Virtual Machines and Farms.</description>
                     <modules type="array">
                         <module>itop-virtualization-mgmt</module>
+                        <module>itop-bridge-virtualization-storage</module>
                     </modules>
                     <default>true</default>
                 </choice>
@@ -100,6 +118,7 @@
                     <modules type="array">
                         <module>teemip-network-mgmt</module>
                         <module>teemip-network-mgmt-extended</module>
+                        <module>sv-snmp-discovery</module>
                    </modules>
                     <mandatory>true</mandatory>
                 </choice>
@@ -166,6 +185,8 @@
                     <modules type="array">
                         <module>combodo-workflow-graphical-view</module>
                         <module>teemip-request-mgmt</module>
+                        <module>precanned-replies</module>
+                        <module>precanned-replies-pro</module>
                     </modules>
                     <default>false</default>
                     <sub_options>
