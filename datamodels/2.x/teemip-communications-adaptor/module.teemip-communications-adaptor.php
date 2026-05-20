@@ -6,7 +6,7 @@
 
 SetupWebPage::AddModule(
 	__FILE__,
-	'teemip-communication-adaptor/1.0.0',
+	'teemip-communications-adaptor/1.0.0',
 	array(
 		// Identification
 		//
@@ -16,7 +16,7 @@ SetupWebPage::AddModule(
 		// Setup
 		//
 		'dependencies' => array(
-			'itop-communication/1.4.1',
+			'itop-communications/1.4.2',
 		),
 		'mandatory' => true,
 		'visible' => false,
