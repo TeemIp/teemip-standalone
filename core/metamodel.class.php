@@ -1,10 +1,9 @@
 <?php
 
 /*
- * @copyright   Copyright (C) 2010-2026 TeemIp
+ * @copyright   Copyright (C) 2010-2026 teemIP
  * @license     http://opensource.org/licenses/AGPL-3.0
  */
-
 use Combodo\iTop\Application\EventRegister\ApplicationEvents;
 use Combodo\iTop\Core\MetaModel\FriendlyNameType;
 use Combodo\iTop\Service\Events\EventData;
@@ -3950,7 +3949,7 @@ abstract class MetaModel
 					} elseif (is_array($value)) {
 						$aScalarArgs[$sArgName] = $value;
                     } elseif (is_object($value)) {
-                        // Addition made to solve import bug. See bug CND 7497
+                        // teemIP addition made to solve import bug. See bug 7497
                         if (method_exists($value, 'ToString')) {
                             $aScalarArgs[$sArgName] = $value->ToString();
                         }
