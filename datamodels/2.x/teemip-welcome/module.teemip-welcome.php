@@ -10,14 +10,15 @@ SetupWebPage::AddModule(
 	array(
 		// Identification
 		//
-		'label' => 'TeemIp skin',
+		'label' => 'teemIP skin',
 		'category' => 'skin',
 		
 		// Setup
 		//
 		'dependencies' => array(
 			'itop-welcome-itil/3.2.0',
-			'itop-config-mgmt/3.2.0'
+			'itop-config-mgmt/3.2.0',
+            'steffunky-backoffice-bluemoon-theme/0.1.0',
 		),
 		'mandatory' => true,
 		'visible' => false,
@@ -56,8 +57,9 @@ if (!class_exists('TeemIpWelcomeInstaller'))
 		public static function BeforeWritingConfig(Config $oConfiguration)
 		{
 			// If you want to override/force some configuration values, do it here
-			$oConfiguration->Set('app_icon_url', 'https://www.teemip.net/', 'first_install_or_update');
+			$oConfiguration->Set('app_icon_url', 'https://www.teemip.com/', 'first_install_or_update');
 			$oConfiguration->Set('online_help', 'https://wiki.teemip.net/', 'first_install_or_update');
+            $oConfiguration->Set('backoffice_default_theme', 'bluemoon', 'first_install_or_update');
 			return $oConfiguration;
 		}
 

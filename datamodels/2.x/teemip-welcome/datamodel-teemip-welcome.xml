@@ -6,6 +6,17 @@
     <main_logo_compact _delta="define">teemip-welcome/asset/img/teemip-logo-compact.png</main_logo_compact>
     <login_logo _delta="define">teemip-welcome/asset/img/teemip-login-logo.png</login_logo>
     <portal_logo _delta="define">teemip-welcome/asset/img/teemip-portal-logo.png</portal_logo>
+    <themes>
+      <theme id="test-red" _delta="must_exist">
+        <imports>
+          <import id="scss-variables" xsi:type="variables" _delta="define">steffunky-backoffice-bluemoon-theme/scss/scss-variables.scss</import>
+        </imports>
+        <stylesheets>
+          <stylesheet id="bluemoon_style" _delta="define">steffunky-backoffice-bluemoon-theme/scss/style.scss</stylesheet>
+          <stylesheet id="bluemoon_ace_editor" _delta="define">steffunky-backoffice-bluemoon-theme/scss/ace_editor.scss</stylesheet>
+        </stylesheets>
+      </theme>
+    </themes>
   </branding>
   <dictionaries>
     <dictionary id="DE DE" _delta="must_exist">
