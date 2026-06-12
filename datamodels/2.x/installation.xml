@@ -32,7 +32,6 @@
                         <module>itop-backoffice-bluemoon-theme</module>
                         <module>itop-backup</module>
                         <module>itop-bridge-cmdb-ticket</module>
-                        <module>itop-communications</module>
                         <module>itop-config</module>
                         <module>itop-config-mgmt</module>
                         <module>itop-core-update</module>
