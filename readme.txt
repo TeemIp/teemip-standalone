@@ -1,15 +1,16 @@
-teemIP - version 3.2.3 - 2026-06-02
+teemIP - version 3.2.3 - 2026-06-18
 Readme file
 
 1.   ABOUT THIS RELEASE
 2.   INSTALLATION
 3.   FEATURES
+4.   SUPPORT
 
 1. ABOUT THIS RELEASE
    ==================
 Thank you for downloading the 40th packaged release of teemIP. This is the product version of release 3.2.3.
 
-teemIP's documentation can be found at: https://wiki.teemip.net.
+teemIP's documentation can be found at: https://wiki.teemip.com.
 iTop's documentation is available as a Wiki at: https://www.itophub.io/wiki/page.
 
 teemIP is released under the AGPL (v3) license. (Check license.txt in this directory).
@@ -24,17 +25,18 @@ Miguel Turrubiates for his Spanish Castellano translation.
 Michael Blank and Martin Raenker from ITOMIG GmbH as well as Christian Beer for their German translation.
 @adrinaopsilva from GitHub for his Portuguese (Brazilian) translation.
 @findxon from GitHub for his Chinese (simplified) translation.
+@steffunky from GitHub for his cool bluemoon theme.
 Super-Visions for its iTop extensions.
 The whole Combodo team that you can meet at: https://www.combodo.com/about-us
 
 2. INSTALLATION
    ============
-For installation instructions, please refer to: https://wiki.teemip.net/doku.php?id=download#install
+For installation instructions, please refer to: https://wiki.teemip.com/doku.php?id=download#install
 
 3. FEATURES
    ========
-teemIP 3.2.3 supports all the new features brought by iTop 3.2.3 and has been adapted to it.
-iTop new featured are documented at https://www.itophub.io/wiki/page?id=3_2_0:release:whats_new
+teemIP 3.2.3 supports all the new features brought by iTop 3.2.3-1 and has been adapted to it.
+iTop new features are documented at https://www.itophub.io/wiki/page?id=3_2_0:release:whats_new
 
 In what IP Management is concerned, please refer to: https://wiki.teemip.net/doku.php?id=download:whatsnew#section323
 
@@ -51,3 +53,18 @@ discuss your translation project.
 Known limitations & issues
 --------------------------
 Please, refer to https://sourceforge.net/p/teemip/tickets/.
+
+4. SUPPORT
+   =======
+teemIP is an open-source project, primarily supported by its community.
+
+Community support
+-----------------
+Questions, bug reports and feature requests can be submitted via:
+- The teemIP tickets tracker: https://sourceforge.net/p/teemip/tickets/
+- GitHub issues: https://github.com/TeemIp
+
+Commercial support
+------------------
+Professional support, training and tailored development around teemIP are available from teemIP SAS.
+Contact: support@teemip.com // www.teemip.com
