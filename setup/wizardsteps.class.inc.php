@@ -2420,7 +2420,7 @@ class WizStepDone extends WizardStep
 
 		// Form goes here.. No back button since the job is done !
 		$oPage->add('<div id="placeholder" class="setup-end-placeholder">');
-		$oPage->add("<div><a class=\"ibo-svg-illustration--container\"  title=\"Get Professional Support from teemIP\" href=\"https://support.teemip.com\" target=\"_blank\">".file_get_contents(APPROOT.'images/illustrations/undraw_active_support.svg')."Get professional support</a></div>");
+		$oPage->add("<div><a class=\"ibo-svg-illustration--container\"  title=\"Get Professional Support from teemIP\" href=\"https://www.teemip.com/en/pages/contact/\" target=\"_blank\">".file_get_contents(APPROOT.'images/illustrations/undraw_active_support.svg')."Get professional support</a></div>");
 		$oPage->add('</div>');
 
 		$oPage->add('</div>');

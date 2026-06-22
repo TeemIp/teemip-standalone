@@ -1,4 +1,4 @@
-teemIP - version 3.2.3 - 2026-06-18
+teemIP - version 3.2.3 - 2026-06-22
 Readme file
 
 1.   ABOUT THIS RELEASE

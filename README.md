@@ -15,9 +15,10 @@ Its comprehensive, network oriented and evolutive CMDB lets you document all you
     - Access to the [discussion channels][5],
     - The place where to open [support tickets][6].
 
-[1]: https://www.teemip.net
-[2]: https://wiki.teemip.net
+[1]: https://www.teemip.com
+[2]: https://wiki.teemip.com
 [3]: https://sourceforge.net/projects/teemip/
 [4]: https://sourceforge.net/projects/teemip/files/latest/download
 [5]: https://sourceforge.net/p/teemip/discussion/
 [6]: https://sourceforge.net/p/teemip/tickets/
+  
