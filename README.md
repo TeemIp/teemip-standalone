@@ -1,4 +1,4 @@
-# <img src="https://wiki.teemip.net/lib/exe/fetch.php?media=extensions:teemip-logo.png">
+# <img src="https://wiki.teemip.com/lib/exe/fetch.php?media=extensions:teemip-logo.png">
 Set of files specific to <b>teemIP standalone</b> version
 
 ## Description
