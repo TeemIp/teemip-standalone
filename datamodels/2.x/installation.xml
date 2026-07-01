@@ -31,7 +31,6 @@
                         <module>itop-background-tasks-control-center</module>
                         <module>itop-backoffice-bluemoon-theme</module>
                         <module>itop-backup</module>
-                        <module>itop-bridge-cmdb-ticket</module>
                         <module>itop-communications</module>
                         <module>itop-config</module>
                         <module>itop-config-mgmt</module>
@@ -107,7 +106,6 @@
                     <description>Manage Hypervisors, Virtual Machines and Farms.</description>
                     <modules type="array">
                         <module>itop-virtualization-mgmt</module>
-                        <module>itop-bridge-virtualization-storage</module>
                     </modules>
                     <default>true</default>
                 </choice>
